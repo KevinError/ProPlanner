@@ -13,4 +13,7 @@ public class MainActivity extends AppCompatActivity {
 
     //Testing only test test
     //David L
+    //Ethan Luu
+    //hjgkjhkjn
+
 }
