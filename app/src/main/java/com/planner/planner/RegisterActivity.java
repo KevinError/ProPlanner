@@ -24,7 +24,6 @@ public class RegisterActivity extends AppCompatActivity {
         final EditText userNameET = (EditText) findViewById(R.id.userNameET);
         final EditText passwordET = (EditText) findViewById(R.id.passwordET);
         final EditText nameET = (EditText) findViewById(R.id.nameET);
-        final EditText ageET = (EditText) findViewById(R.id.ageET);
 
         final Button registerBT = (Button) findViewById(R.id.registerBT);
 
@@ -34,7 +33,6 @@ public class RegisterActivity extends AppCompatActivity {
                 final String name = nameET.getText().toString();
                 final String username = userNameET.getText().toString();
                 final String password = passwordET.getText().toString();
-                final int age = Integer.parseInt(ageET.getText().toString());
 
                 Response.Listener<String> responseListener = new Response.Listener<String>() {
                     @Override
@@ -61,7 +59,7 @@ public class RegisterActivity extends AppCompatActivity {
 
                     }
                 };
-                RegisterRequest registerRequest = new RegisterRequest(name,username,age,password,responseListener);
+                RegisterRequest registerRequest = new RegisterRequest(name,username,password,responseListener);
                 RequestQueue queue = Volley.newRequestQueue(RegisterActivity.this);
                 queue.add(registerRequest);
             }
