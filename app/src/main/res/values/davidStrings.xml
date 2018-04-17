@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">PlannerPro</string>
+    <string name="Select_your_major">Select your major</string>
+    <string name="action_settings">Settings</string>
+
+    <string-array name="Majors">
+        <item>Please select your Major</item>
+        <item>Computer Science</item>
+        <item>Computer Engineering</item>
+        <item>Electrical Engineering</item>
+        <item>Mechanical Engineering</item>
+        <item>Aerospace Engineering</item>
+        <item>Chemcial Engineering</item>
+        <item>BioMedical Engineering</item>
+        <item>Civil Engineering</item>
+    </string-array>
+</resources>
