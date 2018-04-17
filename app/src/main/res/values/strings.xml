@@ -1,5 +1,8 @@
 <resources>
-    <string name="app_name">Planner</string>
+    <string name="app_name">PlannerPro</string>
+    <string name="Select_your_major">Select your major</string>
+    <string name="action_settings">Settings</string>
+
     <string-array name="Majors">
         <item>Please select your Major</item>
         <item>Computer Science</item>
@@ -11,5 +14,4 @@
         <item>BioMedical Engineering</item>
         <item>Civil Engineering</item>
     </string-array>
-
 </resources>
