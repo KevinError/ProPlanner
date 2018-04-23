@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp" >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <CheckBox
+                android:id="@+id/cecs100"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="selectItemCS"
+                android:text="CECS 100"/>
+
+            <CheckBox
+                android:id="@+id/cecs105"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="selectItemCS"
+                android:text="CECS 105" />
+
+            <CheckBox
+                android:id="@+id/cecs174"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="selectItemCS"
+                android:text="CECS 174"/>
+
+            <CheckBox
+                android:id="@+id/cecs225"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="selectItemCS"
+                android:text="CECS 225"/>
+
+            <CheckBox
+                android:id="@+id/cecs228"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="selectItemCS"
+                android:text="CECS 228"/>
+
+            <CheckBox
+                android:id="@+id/cecs229"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="selectItemCS"
+                android:text="CECS 229"/>
+
+            <CheckBox
+                android:id="@+id/cecs274"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="selectItemCS"
+                android:text="CECS 274"/>
+
+            <CheckBox
+                android:id="@+id/cecs277"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="selectItemCS"
+                android:text="CECS 277" />
+
+            <CheckBox
+                android:id="@+id/cecs282"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="selectItemCS"
+                android:text="CECS 282"/>
+
+            <CheckBox
+                android:id="@+id/engr101"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="selectItemCS"
+                android:text="ENGR 101"/>
+
+            <CheckBox
+                android:id="@+id/engr102"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="selectItemCS"
+                android:text="ENGR 102"/>
+
+            <CheckBox
+                android:id="@+id/math122"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="selectItemCS"
+                android:text="Math 122"/>
+
+            <CheckBox
+                android:id="@+id/math123"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="selectItemCS"
+                android:text="Math 123"/>
+
+            <CheckBox
+                android:id="@+id/physics151"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="selectItemCS"
+                android:text="PHYS 151"/>
+
+            <CheckBox
+                android:id="@+id/physics152"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="selectItemCS"
+                android:text="PHYS 152"/>
+
+            <CheckBox
+                android:id="@+id/bio200"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="selectItemCS"
+                android:text="Bio 200"/>
+
+            <CheckBox
+                android:id="@+id/cecs323"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="selectItemCS"
+                android:text="CECS 323"/>
+
+            <CheckBox
+                android:id="@+id/cecs326"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="selectItemCS"
+                android:text="CECS 326"/>
+
+            <CheckBox
+                android:id="@+id/cecs327"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="selectItemCS"
+                android:text="CECS 327"/>
+
+            <CheckBox
+                android:id="@+id/cecs328"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="selectItemCS"
+                android:text="CECS 328"/>
+
+            <CheckBox
+                android:id="@+id/cecs341"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="selectItemCS"
+                android:text="CECS 341"/>
+
+            <CheckBox
+                android:id="@+id/cecs343"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="selectItemCS"
+                android:text="CECS 343" />
+
+            <CheckBox
+                android:id="@+id/cecs378"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="selectItemCS"
+                android:text="CECS 378"/>
+
+            <CheckBox
+                android:id="@+id/ee381"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="selectItemCS"
+                android:text="EE 381" />
+
+            <CheckBox
+                android:id="@+id/engr350"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="selectItemCS"
+                android:text="ENGR 350" />
+
+            <CheckBox
+                android:id="@+id/cecs424"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="selectItemCS"
+                android:text="CECS 424" />
+
+            <CheckBox
+                android:id="@+id/coreElective"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="selectItemCS"
+                android:text="Core Elective"/>
+
+            <CheckBox
+                android:id="@+id/appliedElective"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="selectItemCS"
+                android:text="Appliced Elective"/>
+
+            <CheckBox
+                android:id="@+id/spa"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="selectItemCS"
+                android:text="Senoir Project A" />
+
+            <CheckBox
+                android:id="@+id/spb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="selectItemCS"
+                android:text="Senoir Project B" />
+
+            <Button
+                android:id="@+id/generateBT"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:onClick="generateCS"
+                android:text="Generate" />
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

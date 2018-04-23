@@ -28,5 +28,15 @@ public class UserAreaActivity extends AppCompatActivity {
         welcomeMessage.setText(message);
         etUsername.setText(username);
 
+        Button generateBT = (Button)findViewById(R.id.generateBT);
+        generateBT.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(UserAreaActivity.this,MajorActivity.class);
+                startActivity(i);
+            }
+        });
+
+
     }
 }

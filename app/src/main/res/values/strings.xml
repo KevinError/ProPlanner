@@ -14,4 +14,9 @@
     <string name="permission_rationale">"Contacts permissions are needed for providing email
         completions."
     </string>
+    <string name="title_activity_major">MajorActivity</string>
+    <string name="title_activity_cs">CSActivity</string>
+    <string name="title_activity_generated_schedule">GeneratedSchedule</string>
+    <string name="title_activity_ge">GEActivity</string>
+    <string name="title_activity_chem">ChemActivity</string>
 </resources>
