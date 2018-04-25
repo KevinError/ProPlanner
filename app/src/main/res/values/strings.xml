@@ -19,4 +19,6 @@
     <string name="title_activity_generated_schedule">GeneratedSchedule</string>
     <string name="title_activity_ge">GEActivity</string>
     <string name="title_activity_chem">ChemActivity</string>
+    <string name="title_activity_comp_engr">CompEngrActivity</string>
+    <string name="title_activity_bme">BMEActivity</string>
 </resources>

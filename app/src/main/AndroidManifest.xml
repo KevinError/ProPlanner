@@ -30,14 +30,22 @@
         <activity
             android:name=".GeneratedSchedule"
             android:label="@string/title_activity_generated_schedule"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".GEActivity"
             android:label="@string/title_activity_ge"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".ChemActivity"
             android:label="@string/title_activity_chem"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".CompEngrActivity"
+            android:label="@string/title_activity_comp_engr"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".BMEActivity"
+            android:label="@string/title_activity_bme"
             android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 

@@ -17,34 +17,52 @@ public class MajorActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_major);
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
-        setSupportActionBar(toolbar);
-
-        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
-        fab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
-            }
-        });
 
         Spinner s = (Spinner) findViewById(R.id.spinner);
 
-        ArrayAdapter<String> myAdapter = new ArrayAdapter<String>(MajorActivity.this, android.R.layout.simple_list_item_1, getResources().getStringArray(R.array.majors));
+        ArrayAdapter<String> myAdapter = new ArrayAdapter<String>(MajorActivity.this, R.layout.spinner_style, getResources().getStringArray(R.array.majors));
         myAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         s.setAdapter(myAdapter);
+        s.setSelection(0, false);
         s.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
-                if(i == 5){
+                //Aerospace
+                if(i == 0){
                     startActivity(new Intent(MajorActivity.this, CSActivity.class));
                 }
-                else if(i == 2){
+                //Biomedical
+                else if(i==1){
+                    startActivity(new Intent(MajorActivity.this, BMEActivity.class));
+                }
+                //Chemical
+                else if(i==2){
                     startActivity(new Intent(MajorActivity.this, ChemActivity.class));
                 }
+                //Civil
+                else if(i==3){
+                    startActivity(new Intent(MajorActivity.this, CSActivity.class));
+                }
+                //Computer Engineering
+                else if(i==4){
+                    startActivity(new Intent(MajorActivity.this, CompEngrActivity.class));
+                }
+                //Computer Science
+                else if(i==5){
+                    startActivity(new Intent(MajorActivity.this, CSActivity.class));
+                }
+                //Eletrical
+                else if(i==6){
+                    startActivity(new Intent(MajorActivity.this, CSActivity.class));
+                }
+                //Mechnical
+                else if(i==7){
+                    startActivity(new Intent(MajorActivity.this, CSActivity.class));
+                }
 
-                ///And So onnnn....
+            }
+            public void onItemClickedListenr(){
+
             }
 
             @Override

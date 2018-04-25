@@ -1,33 +1,158 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.planner.planner.GEActivity">
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.planner.planner.GEActivity"
+    tools:showIn="@layout/activity_ge">
 
-    <android.support.design.widget.AppBarLayout
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:theme="@style/AppTheme.AppBarOverlay">
+        android:layout_height="match_parent">
 
-        <android.support.v7.widget.Toolbar
-            android:id="@+id/toolbar"
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="?attr/actionBarSize"
-            android:background="?attr/colorPrimary"
-            app:popupTheme="@style/AppTheme.PopupOverlay" />
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
 
-    </android.support.design.widget.AppBarLayout>
+            <CheckBox
+                android:id="@+id/a1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="selectItemGE"
+                android:text="A1"/>
 
-    <include layout="@layout/content_ge" />
+            <CheckBox
+                android:id="@+id/a2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="selectItemGE"
+                android:text="A2" />
 
-    <android.support.design.widget.FloatingActionButton
-        android:id="@+id/fab"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="bottom|end"
-        android:layout_margin="@dimen/fab_margin"
-        app:srcCompat="@android:drawable/ic_dialog_email" />
+            <CheckBox
+                android:id="@+id/a3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="selectItemGE"
+                android:text="A3"/>
 
-</android.support.design.widget.CoordinatorLayout>
+            <CheckBox
+                android:id="@+id/B1a"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="selectItemGE"
+                android:text="B1a"/>
+
+            <CheckBox
+                android:id="@+id/B1b"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="selectItemGE"
+                android:text="B1b"/>
+
+            <CheckBox
+                android:id="@+id/B2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="selectItemGE"
+                android:text="B2"/>
+
+            <CheckBox
+                android:id="@+id/C1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="selectItemGE"
+                android:text="C1"/>
+
+            <CheckBox
+                android:id="@+id/C2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="selectItemGE"
+                android:text="C2" />
+
+            <CheckBox
+                android:id="@+id/C3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="selectItemGE"
+                android:text="C3"/>
+
+            <CheckBox
+                android:id="@+id/D1a"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="selectItemGE"
+                android:text="D1a"/>
+
+            <CheckBox
+                android:id="@+id/D1b"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="selectItemGE"
+                android:text="D1b"/>
+
+            <CheckBox
+                android:id="@+id/D2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="selectItemGE"
+                android:text="D2"/>
+
+            <CheckBox
+                android:id="@+id/E"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="selectItemGE"
+                android:text="E"/>
+
+            <CheckBox
+                android:id="@+id/F1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="selectItemGE"
+                android:text="F1"/>
+
+            <CheckBox
+                android:id="@+id/F2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="selectItemGE"
+                android:text="F2"/>
+
+            <CheckBox
+                android:id="@+id/F3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="selectItemGE"
+                android:text="F3"/>
+
+            <CheckBox
+                android:id="@+id/GlobalIssue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="selectItemGE"
+                android:text="Global Issuse"/>
+
+            <CheckBox
+                android:id="@+id/HumanDiversity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="selectItemGE"
+                android:text="HumanDiversity"/>
+
+
+            <Button
+                android:id="@+id/confirm"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:onClick="generateGE"
+                android:text="Confirm" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>

@@ -19,11 +19,13 @@ public class Course {
 
     public void setPrerequisites(Course pre){
         prerequisites[preInt] = pre;
+        preInt++;
     }
 
     public String getName(){
         return name;
     }
+
     public boolean metPrerequisites(ArrayList<Course> coursesTaken){
         boolean good = true;
         for (int i=0;i<prerequisites.length;i++){
