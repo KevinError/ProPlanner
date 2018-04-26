@@ -33,7 +33,7 @@ public class LoginActivity extends AppCompatActivity {
         registerLink.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent registerIntent = new Intent(LoginActivity.this,MajorActivity.class);
+                Intent registerIntent = new Intent(LoginActivity.this,HomeActivity.class);
                 LoginActivity.this.startActivity(registerIntent);
 
             }
@@ -51,7 +51,7 @@ public class LoginActivity extends AppCompatActivity {
                             if(success){
                                 String name = jsonResponse.getString("name");
 
-                                Intent intent = new Intent(LoginActivity.this, UserAreaActivity.class);
+                                Intent intent = new Intent(LoginActivity.this, HomeActivity.class);
                                 intent.putExtra("name", name);
                                 intent.putExtra("username", username);
 

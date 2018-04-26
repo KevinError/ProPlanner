@@ -3,7 +3,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:paddingLeft="16dp"
-    android:paddingRight="16dp" >
+    android:paddingRight="16dp"
+    android:background="#303030">
 
     <ScrollView
         android:layout_width="match_parent"
@@ -14,10 +15,35 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
+            <TextView
+                android:id="@+id/compSci"
+                android:layout_width="348dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="7dp"
+                android:text="Chemical Engineering Courses:"
+                android:fontFamily="@font/billabong"
+                android:textSize="25sp"
+                android:textColor="#FFDF00"
+                android:textAppearance="@android:style/TextAppearance.Medium"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="*Please check all the courses that you have taken"
+                android:layout_gravity="center_horizontal"
+                android:textColor="#fff" />
+
+
             <CheckBox
                 android:id="@+id/che200"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:textColor="#fff"
+                android:theme="@style/checkBoxStyle"
                 android:onClick="selectItemCHEM"
                 android:text="CHE 200"/>
 
@@ -25,6 +51,8 @@
                 android:id="@+id/che210"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:textColor="#fff"
+                android:theme="@style/checkBoxStyle"
                 android:onClick="selectItemCHEM"
                 android:text="CHE 210" />
 
@@ -32,6 +60,8 @@
                 android:id="@+id/che220"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:textColor="#fff"
+                android:theme="@style/checkBoxStyle"
                 android:onClick="selectItemCHEM"
                 android:text="CHE 220"/>
 
@@ -39,6 +69,8 @@
                 android:id="@+id/chem111a"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:textColor="#fff"
+                android:theme="@style/checkBoxStyle"
                 android:onClick="selectItemCHEM"
                 android:text="CHEM 111A"/>
 
@@ -46,6 +78,8 @@
                 android:id="@+id/chem111b"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:textColor="#fff"
+                android:theme="@style/checkBoxStyle"
                 android:onClick="selectItemCHEM"
                 android:text="CHEM 111B"/>
 
@@ -53,6 +87,8 @@
                 android:id="@+id/ce205"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:textColor="#fff"
+                android:theme="@style/checkBoxStyle"
                 android:onClick="selectItemCHEM"
                 android:text="CE 205"/>
 
@@ -60,6 +96,8 @@
                 android:id="@+id/chemengr101"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:textColor="#fff"
+                android:theme="@style/checkBoxStyle"
                 android:onClick="selectItemCHEM"
                 android:text="ENGR 101"/>
 
@@ -67,6 +105,8 @@
                 android:id="@+id/chemengr102"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:textColor="#fff"
+                android:theme="@style/checkBoxStyle"
                 android:onClick="selectItemCHEM"
                 android:text="ENGR 102" />
 
@@ -74,6 +114,8 @@
                 android:id="@+id/che100"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:textColor="#fff"
+                android:theme="@style/checkBoxStyle"
                 android:onClick="selectItemCHEM"
                 android:text="CHE 100"/>
 
@@ -81,6 +123,8 @@
                 android:id="@+id/chemmath122"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:textColor="#fff"
+                android:theme="@style/checkBoxStyle"
                 android:onClick="selectItemCHEM"
                 android:text="MATH 122"/>
 
@@ -88,6 +132,8 @@
                 android:id="@+id/chemmath123"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:textColor="#fff"
+                android:theme="@style/checkBoxStyle"
                 android:onClick="selectItemCHEM"
                 android:text="MATH 123"/>
 
@@ -95,6 +141,8 @@
                 android:id="@+id/chemmath224"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:textColor="#fff"
+                android:theme="@style/checkBoxStyle"
                 android:onClick="selectItemCHEM"
                 android:text="MATH 224"/>
 
@@ -102,6 +150,8 @@
                 android:id="@+id/chemphys151"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:textColor="#fff"
+                android:theme="@style/checkBoxStyle"
                 android:onClick="selectItemCHEM"
                 android:text="PHYS 151"/>
 
@@ -109,6 +159,8 @@
                 android:id="@+id/chem220a"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:textColor="#fff"
+                android:theme="@style/checkBoxStyle"
                 android:onClick="selectItemCHEM"
                 android:text="CHEM 220A"/>
 
@@ -116,6 +168,8 @@
                 android:id="@+id/chem220b"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:textColor="#fff"
+                android:theme="@style/checkBoxStyle"
                 android:onClick="selectItemCHEM"
                 android:text="CHEM 220B"/>
 
@@ -123,6 +177,8 @@
                 android:id="@+id/chem223a"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:textColor="#fff"
+                android:theme="@style/checkBoxStyle"
                 android:onClick="selectItemCHEM"
                 android:text="CHEM 223A"/>
 
@@ -130,6 +186,8 @@
                 android:id="@+id/chemphys152"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:textColor="#fff"
+                android:theme="@style/checkBoxStyle"
                 android:onClick="selectItemCHEM"
                 android:text="PHYS 152"/>
 
@@ -137,6 +195,8 @@
                 android:id="@+id/che310"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:textColor="#fff"
+                android:theme="@style/checkBoxStyle"
                 android:onClick="selectItemCHEM"
                 android:text="CHE 310"/>
 
@@ -144,6 +204,8 @@
                 android:id="@+id/che320"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:textColor="#fff"
+                android:theme="@style/checkBoxStyle"
                 android:onClick="selectItemCHEM"
                 android:text="CHE 320"/>
 
@@ -151,6 +213,8 @@
                 android:id="@+id/che330"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:textColor="#fff"
+                android:theme="@style/checkBoxStyle"
                 android:onClick="selectItemCHEM"
                 android:text="CHE 330"/>
 
@@ -158,6 +222,8 @@
                 android:id="@+id/che420"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:textColor="#fff"
+                android:theme="@style/checkBoxStyle"
                 android:onClick="selectItemCHEM"
                 android:text="CHE 420"/>
 
@@ -165,6 +231,8 @@
                 android:id="@+id/che430"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:textColor="#fff"
+                android:theme="@style/checkBoxStyle"
                 android:onClick="selectItemCHEM"
                 android:text="CHE 430" />
 
@@ -172,6 +240,8 @@
                 android:id="@+id/che440"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:textColor="#fff"
+                android:theme="@style/checkBoxStyle"
                 android:onClick="selectItemCHEM"
                 android:text="CHE 440"/>
 
@@ -179,6 +249,8 @@
                 android:id="@+id/che450"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:textColor="#fff"
+                android:theme="@style/checkBoxStyle"
                 android:onClick="selectItemCHEM"
                 android:text="CHE 450" />
 
@@ -186,6 +258,8 @@
                 android:id="@+id/che460"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:textColor="#fff"
+                android:theme="@style/checkBoxStyle"
                 android:onClick="selectItemCHEM"
                 android:text="CHE 460" />
 
@@ -193,6 +267,8 @@
                 android:id="@+id/che470"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:textColor="#fff"
+                android:theme="@style/checkBoxStyle"
                 android:onClick="selectItemCHEM"
                 android:text="CHE 470" />
 
@@ -200,6 +276,8 @@
                 android:id="@+id/chem375"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:textColor="#fff"
+                android:theme="@style/checkBoxStyle"
                 android:onClick="selectItemCHEM"
                 android:text="CHEM 375"/>
 
@@ -207,6 +285,8 @@
                 android:id="@+id/math370a"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:textColor="#fff"
+                android:theme="@style/checkBoxStyle"
                 android:onClick="selectItemCHEM"
                 android:text="MATH 370A"/>
 
@@ -214,6 +294,8 @@
                 android:id="@+id/cc1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:textColor="#fff"
+                android:theme="@style/checkBoxStyle"
                 android:onClick="selectItemCHEM"
                 android:text="Course Choice 1" />
 
@@ -221,6 +303,8 @@
                 android:id="@+id/cc2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:textColor="#fff"
+                android:theme="@style/checkBoxStyle"
                 android:onClick="selectItemCHEM"
                 android:text="Course Choice 2" />
 
@@ -228,14 +312,19 @@
                 android:id="@+id/cc3"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:textColor="#fff"
+                android:theme="@style/checkBoxStyle"
                 android:onClick="selectItemCHEM"
                 android:text="Course Choice 3" />
 
             <Button
                 android:id="@+id/generateBT"
-                android:layout_width="100dp"
+                android:layout_width="300dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="16dp"
+                android:layout_marginTop="16dp"
+                android:background="#FFDF00"
                 android:onClick="generateCHEM"
                 android:text="Generate" />
 

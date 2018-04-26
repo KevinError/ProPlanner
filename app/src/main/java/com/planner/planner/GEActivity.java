@@ -151,6 +151,8 @@ public class    GEActivity extends AppCompatActivity {
         Intent generate = new Intent(GEActivity.this, GeneratedSchedule.class);
         generate.putExtras(b);
         GEActivity.this.startActivity(generate);
+
+        GEActivity.this.startActivity(new Intent(GEActivity.this,MajorActivity.class));
     }
 
 }

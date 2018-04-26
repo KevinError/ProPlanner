@@ -61,9 +61,6 @@ public class MajorActivity extends AppCompatActivity {
                 }
 
             }
-            public void onItemClickedListenr(){
-
-            }
 
             @Override
             public void onNothingSelected(AdapterView<?> adapterView) {

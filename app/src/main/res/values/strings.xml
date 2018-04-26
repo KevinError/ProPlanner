@@ -21,4 +21,10 @@
     <string name="title_activity_chem">ChemActivity</string>
     <string name="title_activity_comp_engr">CompEngrActivity</string>
     <string name="title_activity_bme">BMEActivity</string>
+    <string name="title_activity_home">HomeActivity</string>
+    <string name="title_activity_reminder">ReminderActivity</string>
+    <string name="title_activity_list_data">ListDataActivity</string>
+    <string name="title_activity_edit_data">EditDataActivity</string>
+    <string name="title_activity_schedule_list">ScheduleListActivity</string>
+    <string name="title_activity_display_schedule">DisplayScheduleActivity</string>
 </resources>

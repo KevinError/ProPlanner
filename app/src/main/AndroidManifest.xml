@@ -46,7 +46,27 @@
         <activity
             android:name=".BMEActivity"
             android:label="@string/title_activity_bme"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".HomeActivity"
+            android:label="@string/title_activity_home"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ReminderActivity"
+            android:label="@string/title_activity_reminder"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ListDataActivity"
+            android:label="@string/title_activity_list_data"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".EditDataActivity"
+            android:label="@string/title_activity_edit_data"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".DisplayScheduleActivity"
+            android:label="@string/title_activity_display_schedule"
+            android:theme="@style/AppTheme.NoActionBar" />
     </application>
 
 </manifest>

@@ -289,8 +289,6 @@ public class CSActivity extends AppCompatActivity {
         CECS326 = new Course("CECS 326");
         CECS326.setPrerequisites(CECS282);
         CECS326.setPrerequisites(CECS341);
-//        CECS326.setNextCourses(CECS327);
-//        CECS326.setNextCourses(CECS424);
 
         CECS327 = new Course("CECS 327");
         CECS327.setPrerequisites(CECS326);
@@ -298,9 +296,6 @@ public class CSActivity extends AppCompatActivity {
         CECS328 = new Course("CECS 328");
         CECS328.setPrerequisites(CECS228);
         CECS328.setPrerequisites(CECS274);
-//        CECS328.setNextCourses(CECS424);
-//        CECS328.setNextCourses(CoreElective);
-//        CECS328.setNextCourses(AppliedElective);
 
         CECS341 = new Course("CECS 341");
         CECS341.setPrerequisites(CECS225);
@@ -308,9 +303,6 @@ public class CSActivity extends AppCompatActivity {
         CECS343 = new Course("CECS 343");
         CECS343.setPrerequisites(CECS277);
         CECS343.setPrerequisites(CECS282);
-//        CECS343.setNextCourses(CoreElective);
-//        CECS343.setNextCourses(AppliedElective);
-//        CECS343.setNextCourses(SeniorProjectA);
 
         CECS378 = new Course("CECS 378");
         CECS378.setPrerequisites(CECS229);

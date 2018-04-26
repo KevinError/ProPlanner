@@ -32,7 +32,10 @@ public class Course {
             if(prerequisites[i]!= null) {
                 if (coursesTaken.contains(prerequisites[i])) {
                     good = true;
-                } else good = false;
+                } else {
+                    good = false;
+                    break;
+                }
             }
         }
         return good;
