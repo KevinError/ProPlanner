@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.david.test.AeroActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/compSci"
+                android:layout_width="348dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="7dp"
+                android:text="Aerospace Engineering courses:"
+                android:fontFamily="@font/billabong"
+                android:textSize="25sp"
+                android:textColor="#FFDF00"
+                android:textAppearance="@android:style/TextAppearance.Medium"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="*Please check all the courses that you have taken"
+                android:layout_gravity="center_horizontal"
+                android:textColor="#fff" />
+
+            <CheckBox
+                android:id="@+id/ce205"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="selectItemAERO"
+                android:text="CE 205"/>
+
+            <CheckBox
+                android:id="@+id/chem111a"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="selectItemAERO"
+                android:text="CHEM 111A" />
+
+            <CheckBox
+                android:id="@+id/engr101"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="selectItemAERO"
+                android:text="CHE 220"/>
+
+            <CheckBox
+                android:id="@+id/engr102"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="selectItemAERO"
+                android:text="CHEM 111A"/>
+
+            <CheckBox
+                android:id="@+id/mae101A"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="selectItemAERO"
+                android:text="MAE 101A"/>
+
+            <CheckBox
+                android:id="@+id/mae172"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="selectItemAERO"
+                android:text="MAE 172"/>
+
+            <CheckBox
+                android:id="@+id/mae205"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="selectItemAERO"
+                android:text="MAE 205"/>
+
+            <CheckBox
+                android:id="@+id/math122"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="selectItemAERO"
+                android:text="MATH 122" />
+
+            <CheckBox
+                android:id="@+id/math123"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="selectItemAERO"
+                android:text="MATH 123"/>
+
+            <CheckBox
+                android:id="@+id/math224"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="selectItemAERO"
+                android:text="MATH 224"/>
+
+            <CheckBox
+                android:id="@+id/phys151"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="selectItemAERO"
+                android:text="PHYS 151"/>
+
+            <CheckBox
+                android:id="@+id/phys152"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="selectItemAERO"
+                android:text="PHYS 152"/>
+
+            <CheckBox
+                android:id="@+id/econ300"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="selectItemAERO"
+                android:text="ECON 300"/>
+
+            <CheckBox
+                android:id="@+id/math370a"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="selectItemAERO"
+                android:text="MATH 370A"/>
+
+            <CheckBox
+                android:id="@+id/mae300"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="selectItemAERO"
+                android:text="MAE 300"/>
+
+            <CheckBox
+                android:id="@+id/mae305"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="selectItemAERO"
+                android:text="MAE 305"/>
+
+            <CheckBox
+                android:id="@+id/mae330"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="selectItemAERO"
+                android:text="MAE 330"/>
+
+            <CheckBox
+                android:id="@+id/mae333"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="selectItemAERO"
+                android:text="MAE 333"/>
+
+            <CheckBox
+                android:id="@+id/mae334"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="selectItemAERO"
+                android:text="MAE 334"/>
+
+            <CheckBox
+                android:id="@+id/mae350"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="selectItemAERO"
+                android:text="MAE 350"/>
+
+            <CheckBox
+                android:id="@+id/mae365"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="selectItemAERO"
+                android:text="MAE 365"/>
+
+            <CheckBox
+                android:id="@+id/mae371"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="selectItemAERO"
+                android:text="MAE 371" />
+
+            <CheckBox
+                android:id="@+id/mae373"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="selectItemAERO"
+                android:text="MAE 373"/>
+
+            <CheckBox
+                android:id="@+id/mae374"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="selectItemAERO"
+                android:text="MAE 374" />
+
+            <CheckBox
+                android:id="@+id/mae381"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="selectItemAERO"
+                android:text="MAE 381" />
+
+            <CheckBox
+                android:id="@+id/mae390"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="selectItemAERO"
+                android:text="MAE 390" />
+
+            <CheckBox
+                android:id="@+id/mae440"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="selectItemAERO"
+                android:text="MAE 440"/>
+
+            <CheckBox
+                android:id="@+id/mae452"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="selectItemAERO"
+                android:text="MAE 452"/>
+
+            <CheckBox
+                android:id="@+id/mae465"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="selectItemAERO"
+                android:text="MAE 465" />
+
+            <CheckBox
+                android:id="@+id/mae478"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="selectItemAERO"
+                android:text="MAE 478" />
+
+            <CheckBox
+                android:id="@+id/mae479"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="selectItemAERO"
+                android:text="MAE 479" />
+
+            <CheckBox
+                android:id="@+id/mae434"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="selectItemAERO"
+                android:text="MAE 434"/>
+
+            <CheckBox
+                android:id="@+id/mae451"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="selectItemAERO"
+                android:text="MAE 451"/>
+
+            <CheckBox
+                android:id="@+id/mae453"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="selectItemAERO"
+                android:text="MAE 453" />
+
+            <CheckBox
+                android:id="@+id/mae481"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="selectItemAERO"
+                android:text="MAE 481" />
+
+            <CheckBox
+                android:id="@+id/mae483"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="selectItemAERO"
+                android:text="MAE 483" />
+
+            <CheckBox
+                android:id="@+id/aeroCC1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="selectItemAERO"
+                android:text="MAE 453" />
+
+            <CheckBox
+                android:id="@+id/aeroCC2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="selectItemAERO"
+                android:text="MAE 481" />
+
+            <CheckBox
+                android:id="@+id/aeroCC3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="selectItemAERO"
+                android:text="MAE 483" />
+
+
+
+            <Button
+                android:id="@+id/SelectAeroButton"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:onClick="generateCHEM"
+                android:text="Generate" />
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</RelativeLayout>
