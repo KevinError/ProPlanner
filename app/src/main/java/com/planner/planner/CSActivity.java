@@ -13,6 +13,7 @@ import org.w3c.dom.Text;
 import java.util.ArrayList;
 
 public class CSActivity extends AppCompatActivity {
+    private String TAG = "hehe";
 
     private ArrayList<Course> selection = new ArrayList<>();
     private ArrayList<Course> allCourses = new ArrayList<>();
@@ -21,12 +22,16 @@ public class CSActivity extends AppCompatActivity {
     private Course PHYS151,PHYS152,BIO200,CECS323,CECS326,CECS327,CECS328,CECS341,CECS343,CECS378;
     private Course EE381,ENGR350,CECS424,CoreElective,AppliedElective,SeniorProjectA,SeniorProjectB;
 
+    private String[] array;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_cs);
         init();
+
+        Bundle b = this.getIntent().getExtras();
+        array=b.getStringArray("schedule");
 
         allCourses.add(Math122);
         allCourses.add(Math123);
@@ -358,11 +363,18 @@ public class CSActivity extends AppCompatActivity {
         }
 
         //convert arraylist to array
-        String[] scheduleArray = new String[schedule.size()];
+        String[] scheduleArray = new String[schedule.size()+2];
         int totalCourses = 0;
         for(Course temp: schedule){
             scheduleArray[totalCourses]=temp.getName();
             totalCourses++;
+        }
+
+        for(int i =0; i<array.length;i++){
+            if(array[i]!=null){
+                scheduleArray[totalCourses]=array[i];
+                totalCourses++;
+            }
         }
 
         Bundle b = new Bundle();

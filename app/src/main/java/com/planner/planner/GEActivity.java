@@ -6,12 +6,14 @@ import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.util.Log;
 import android.view.View;
 import android.widget.CheckBox;
 
 import java.util.ArrayList;
 
 public class    GEActivity extends AppCompatActivity {
+    private String TAG = "HEHE";
 
     private ArrayList<Course> selection = new ArrayList<>();
     private ArrayList<Course> allCourses = new ArrayList<>();
@@ -23,6 +25,28 @@ public class    GEActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_ge);
         init();
+
+        allCourses.add(A1);
+        allCourses.add(A2);
+        allCourses.add(A3);
+        allCourses.add(B1A);
+        allCourses.add(B1B);
+        allCourses.add(B2);
+        allCourses.add(C1);
+        allCourses.add(C2);
+        allCourses.add(C3);
+        allCourses.add(D1A);
+        allCourses.add(D1B);
+        allCourses.add(D2);
+        allCourses.add(E);
+        allCourses.add(F1);
+        allCourses.add(F2);
+        allCourses.add(F3);
+        allCourses.add(GlobalIssue);
+        allCourses.add(HumanDiversity);
+
+
+
 
 
     }
@@ -144,15 +168,14 @@ public class    GEActivity extends AppCompatActivity {
         }
 
         String[] scheduleArray = new String[2];
-        scheduleArray[0] = selection.get(0).getName();
-        scheduleArray[1] = selection.get(1).getName();
+        scheduleArray[0] = allCourses.get(0).getName();
+        Log.d(TAG,allCourses.get(0).getName());
+        scheduleArray[1] = allCourses.get(1).getName();
         Bundle b = new Bundle();
         b.putStringArray("schedule", scheduleArray);
-        Intent generate = new Intent(GEActivity.this, GeneratedSchedule.class);
+        Intent generate = new Intent(GEActivity.this, MajorActivity.class);
         generate.putExtras(b);
         GEActivity.this.startActivity(generate);
-
-        GEActivity.this.startActivity(new Intent(GEActivity.this,MajorActivity.class));
     }
 
 }

@@ -13,12 +13,17 @@ import android.widget.Spinner;
 
 public class MajorActivity extends AppCompatActivity {
 
+    private String[] array;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_major);
 
         Spinner s = (Spinner) findViewById(R.id.spinner);
+
+        Bundle b = this.getIntent().getExtras();
+        array =b.getStringArray("schedule");
 
         ArrayAdapter<String> myAdapter = new ArrayAdapter<String>(MajorActivity.this, R.layout.spinner_style, getResources().getStringArray(R.array.majors));
         myAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
@@ -29,7 +34,11 @@ public class MajorActivity extends AppCompatActivity {
             public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
                 //Aerospace
                 if(i == 0){
-                    startActivity(new Intent(MajorActivity.this, CSActivity.class));
+                    Bundle b = new Bundle();
+                    b.putStringArray("schedule", array);
+                    Intent generate = new Intent(MajorActivity.this,CSActivity.class);
+                    generate.putExtras(b);
+                    MajorActivity.this.startActivity(generate);
                 }
                 //Biomedical
                 else if(i==1){
@@ -49,7 +58,11 @@ public class MajorActivity extends AppCompatActivity {
                 }
                 //Computer Science
                 else if(i==5){
-                    startActivity(new Intent(MajorActivity.this, CSActivity.class));
+                    Bundle b = new Bundle();
+                    b.putStringArray("schedule", array);
+                    Intent generate = new Intent(MajorActivity.this,CSActivity.class);
+                    generate.putExtras(b);
+                    MajorActivity.this.startActivity(generate);
                 }
                 //Eletrical
                 else if(i==6){

@@ -30,7 +30,7 @@ public class HomeActivity extends AppCompatActivity {
         ls.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                HomeActivity.this.startActivity(new Intent(HomeActivity.this,DisplayScheduleActivity.class));
+                HomeActivity.this.startActivity(new Intent(HomeActivity.this,ListScheduleActivity.class));
             }
         });
         reminders.setOnClickListener(new View.OnClickListener() {

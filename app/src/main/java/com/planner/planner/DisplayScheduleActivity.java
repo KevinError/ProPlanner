@@ -23,12 +23,41 @@ public class DisplayScheduleActivity extends AppCompatActivity {
 
     private ListView mListView;
 
+    private String key;
+    private String schedule;
+
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_list_data);
-        mListView = (ListView) findViewById(R.id.listView);
-        databaseSchedule = new DatabaseSchedule(this);
+        setContentView(R.layout.activity_display_schedule);
+        mListView = (ListView) findViewById(R.id.schedule1);
+
+
+
+
+        Intent intent = getIntent();
+        key = intent.getExtras().getString("num");
+
+        switch (key){
+            case ("1"):
+                schedule="s1";
+                break;
+            case ("2"):
+                schedule="s2";
+                break;
+            case ("3"):
+                schedule="s3";
+                break;
+            case ("4"):
+                schedule="s4";
+                break;
+            case ("5"):
+                schedule="s5";
+                break;
+        }
+
+        databaseSchedule = new DatabaseSchedule(schedule,this);
+
 
         populateListView();
     }

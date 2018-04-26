@@ -11,25 +11,26 @@ public class DatabaseSchedule extends SQLiteOpenHelper {
 
     private static final String TAG = "DatabaseHelper";
 
-    private static final String TABLE_NAME = "schedule_table";
+    private String tName;
     private static final String COL1 = "ID";
     private static final String COL2 = "name";
 
 
-    public DatabaseSchedule(Context context) {
-        super(context, TABLE_NAME, null, 1);
+    public DatabaseSchedule(String name ,Context context) {
+        super(context, name, null, 1);
+        tName=name;
     }
 
     @Override
     public void onCreate(SQLiteDatabase db) {
-        String createTable = "CREATE TABLE " + TABLE_NAME + " (ID INTEGER PRIMARY KEY AUTOINCREMENT, " +
+        String createTable = "CREATE TABLE " + tName + " (ID INTEGER PRIMARY KEY AUTOINCREMENT, " +
                 COL2 +" TEXT)";
         db.execSQL(createTable);
     }
 
     @Override
     public void onUpgrade(SQLiteDatabase db, int i, int i1) {
-        db.execSQL("DROP IF TABLE EXISTS " + TABLE_NAME);
+        db.execSQL("DROP IF TABLE EXISTS " + tName);
         onCreate(db);
     }
 
@@ -38,9 +39,9 @@ public class DatabaseSchedule extends SQLiteOpenHelper {
         ContentValues contentValues = new ContentValues();
         contentValues.put(COL2, item);
 
-        Log.d(TAG, "addData: Adding " + item + " to " + TABLE_NAME);
+        Log.d(TAG, "addData: Adding " + item + " to " + tName);
 
-        long result = db.insert(TABLE_NAME, null, contentValues);
+        long result = db.insert(tName, null, contentValues);
 
         //if date as inserted incorrectly it will return -1
         if (result == -1) {
@@ -56,7 +57,7 @@ public class DatabaseSchedule extends SQLiteOpenHelper {
      */
     public Cursor getData(){
         SQLiteDatabase db = this.getWritableDatabase();
-        String query = "SELECT * FROM " + TABLE_NAME;
+        String query = "SELECT * FROM " + tName;
         Cursor data = db.rawQuery(query, null);
         return data;
     }
@@ -68,7 +69,7 @@ public class DatabaseSchedule extends SQLiteOpenHelper {
      */
     public Cursor getItemID(String name){
         SQLiteDatabase db = this.getWritableDatabase();
-        String query = "SELECT " + COL1 + " FROM " + TABLE_NAME +
+        String query = "SELECT " + COL1 + " FROM " + tName +
                 " WHERE " + COL2 + " = '" + name + "'";
         Cursor data = db.rawQuery(query, null);
         return data;
@@ -82,7 +83,7 @@ public class DatabaseSchedule extends SQLiteOpenHelper {
      */
     public void updateName(String newName, int id, String oldName){
         SQLiteDatabase db = this.getWritableDatabase();
-        String query = "UPDATE " + TABLE_NAME + " SET " + COL2 +
+        String query = "UPDATE " + tName+ " SET " + COL2 +
                 " = '" + newName + "' WHERE " + COL1 + " = '" + id + "'" +
                 " AND " + COL2 + " = '" + oldName + "'";
         Log.d(TAG, "updateName: query: " + query);
@@ -97,7 +98,7 @@ public class DatabaseSchedule extends SQLiteOpenHelper {
      */
     public void deleteName(int id, String name){
         SQLiteDatabase db = this.getWritableDatabase();
-        String query = "DELETE FROM " + TABLE_NAME + " WHERE "
+        String query = "DELETE FROM " + tName + " WHERE "
                 + COL1 + " = '" + id + "'" +
                 " AND " + COL2 + " = '" + name + "'";
         Log.d(TAG, "deleteName: query: " + query);

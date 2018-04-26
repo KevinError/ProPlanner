@@ -67,6 +67,8 @@
             android:name=".DisplayScheduleActivity"
             android:label="@string/title_activity_display_schedule"
             android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".ListScheduleActivity" />
+        <activity android:name=".SaveToActivity"></activity>
     </application>
 
 </manifest>
