@@ -16,7 +16,7 @@
             android:orientation="vertical">
 
             <TextView
-                android:id="@+id/AeroEngr"
+                android:id="@+id/MechEngr"
                 android:layout_width="348dp"
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="8dp"
@@ -24,7 +24,7 @@
                 android:layout_marginRight="8dp"
                 android:layout_marginStart="8dp"
                 android:layout_marginTop="7dp"
-                android:text="Aerospace Engneering courses:"
+                android:text="Mechanical Engneering courses:"
                 android:fontFamily="@font/billabong"
                 android:textSize="25sp"
                 android:textColor="#FFDF00"
@@ -37,351 +37,319 @@
                 android:layout_gravity="center_horizontal"
                 android:textColor="#fff" />
 
-
+            <CheckBox
+                android:id="@+id/MCHEM111A"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="selectItemMech"
+                android:textColor="#fff"
+                android:theme="@style/checkBoxStyle"
+                android:text="Chem 111a"/>
 
             <CheckBox
-                android:id="@+id/ACE205"
+                android:id="@+id/MCE205"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textColor="#fff"
                 android:theme="@style/checkBoxStyle"
-                android:onClick="selectItemAERO"
+                android:onClick="selectItemMech"
                 android:text="CE 205" />
 
             <CheckBox
-                android:id="@+id/ACHEM111A"
+                android:id="@+id/MMATH122"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textColor="#fff"
                 android:theme="@style/checkBoxStyle"
-                android:onClick="selectItemAERO"
-                android:text="Chem 111a"/>
-            <CheckBox
-                android:id="@+id/AMATH122"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:textColor="#fff"
-                android:theme="@style/checkBoxStyle"
-                android:onClick="selectItemAERO"
+                android:onClick="selectItemMech"
                 android:text="Math 122"/>
 
             <CheckBox
-                android:id="@+id/AMATH123"
+                android:id="@+id/MMATH123"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textColor="#fff"
                 android:theme="@style/checkBoxStyle"
-                android:onClick="selectItemAERO"
+                android:onClick="selectItemMech"
                 android:text="Math 123"/>
 
             <CheckBox
-                android:id="@+id/AMATH224"
+                android:id="@+id/MMATH224"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textColor="#fff"
                 android:theme="@style/checkBoxStyle"
-                android:onClick="selectItemAERO"
+                android:onClick="selectItemMech"
                 android:text="Math 224"/>
 
             <CheckBox
-                android:id="@+id/AENGR101"
+                android:id="@+id/MENGR101"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textColor="#fff"
                 android:theme="@style/checkBoxStyle"
-                android:onClick="selectItemAERO"
+                android:onClick="selectItemMech"
                 android:text="ENGR 101"/>
 
             <CheckBox
-                android:id="@+id/AENGR102"
+                android:id="@+id/MENGR102"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textColor="#fff"
                 android:theme="@style/checkBoxStyle"
-                android:onClick="selectItemAERO"
+                android:onClick="selectItemMech"
                 android:text="ENGR 102"/>
 
             <CheckBox
-                android:id="@+id/AMAE101B"
+                android:id="@+id/MMAE101B"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textColor="#fff"
                 android:theme="@style/checkBoxStyle"
-                android:onClick="selectItemAERO"
+                android:onClick="selectItemMech"
                 android:text="MAE 101B" />
 
             <CheckBox
-                android:id="@+id/AMAE172"
+                android:id="@+id/MMAE172"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textColor="#fff"
                 android:theme="@style/checkBoxStyle"
-                android:onClick="selectItemAERO"
+                android:onClick="selectItemMech"
                 android:text="MAE 172"/>
 
             <CheckBox
-                android:id="@+id/AMAE205"
+                android:id="@+id/MMAE205"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textColor="#fff"
                 android:theme="@style/checkBoxStyle"
-                android:onClick="selectItemAERO"
+                android:onClick="selectItemMech"
                 android:text="MAE 205"/>
 
             <CheckBox
-                android:id="@+id/AECON300"
+                android:id="@+id/MMAE272"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textColor="#fff"
                 android:theme="@style/checkBoxStyle"
-                android:onClick="selectItemAERO"
-                android:text="MAE 300"/>
+                android:onClick="selectItemMech"
+                android:text="MAE 272"/>
 
             <CheckBox
-                android:id="@+id/APHYS151"
+                android:id="@+id/MPHYS151"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textColor="#fff"
                 android:theme="@style/checkBoxStyle"
-                android:onClick="selectItemAERO"
+                android:onClick="selectItemMech"
                 android:text="Phyics 151"/>
 
             <CheckBox
-                android:id="@+id/APHYS152"
+                android:id="@+id/MPHYS152"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textColor="#fff"
                 android:theme="@style/checkBoxStyle"
-                android:onClick="selectItemAERO"
+                android:onClick="selectItemMech"
                 android:text="Phyics 152"/>
 
             <CheckBox
-                android:id="@+id/AMAE300"
+                android:id="@+id/MCE335"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textColor="#fff"
                 android:theme="@style/checkBoxStyle"
-                android:onClick="selectItemAERO"
+                android:onClick="selectItemMech"
+                android:text="CE 335"/>
+
+            <CheckBox
+                android:id="@+id/MCE336"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#fff"
+                android:theme="@style/checkBoxStyle"
+                android:onClick="selectItemMech"
+                android:text="CE 336"/>
+
+            <CheckBox
+                android:id="@+id/MCE406"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#fff"
+                android:theme="@style/checkBoxStyle"
+                android:onClick="selectItemMech"
+                android:text="CE 406"/>
+
+            <CheckBox
+                android:id="@+id/MMATH370A"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#fff"
+                android:theme="@style/checkBoxStyle"
+                android:onClick="selectItemMech"
+                android:text="Math 370A"/>
+
+            <CheckBox
+                android:id="@+id/MMAE300"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#fff"
+                android:theme="@style/checkBoxStyle"
+                android:onClick="selectItemMech"
                 android:text="MAE 300"/>
 
-
-
-
             <CheckBox
-                android:id="@+id/AMAE305"
+                android:id="@+id/MMAE305"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textColor="#fff"
                 android:theme="@style/checkBoxStyle"
-                android:onClick="selectItemAERO"
+                android:onClick="selectItemMech"
                 android:text="MAE 305"/>
 
-
-
             <CheckBox
-                android:id="@+id/AMAE330"
+                android:id="@+id/MMAE322"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textColor="#fff"
                 android:theme="@style/checkBoxStyle"
-                android:onClick="selectItemAERO"
+                android:onClick="selectItemMech"
+                android:text="MAE 322"/>
+
+            <CheckBox
+                android:id="@+id/MMAE330"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#fff"
+                android:theme="@style/checkBoxStyle"
+                android:onClick="selectItemMech"
                 android:text="MAE 330"/>
 
             <CheckBox
-                android:id="@+id/AMAE333"
+                android:id="@+id/MMAE336"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textColor="#fff"
                 android:theme="@style/checkBoxStyle"
-                android:onClick="selectItemAERO"
-                android:text="MAE 333" />
+                android:onClick="selectItemMech"
+                android:text="MAE 336" />
 
             <CheckBox
-                android:id="@+id/AMAE334"
+                android:id="@+id/MMAE337"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textColor="#fff"
                 android:theme="@style/checkBoxStyle"
-                android:onClick="selectItemAERO"
-                android:text="MAE 334"/>
+                android:onClick="selectItemMech"
+                android:text="MAE 337"/>
 
             <CheckBox
-                android:id="@+id/AMAE350"
+                android:id="@+id/MMAE361"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textColor="#fff"
                 android:theme="@style/checkBoxStyle"
-                android:onClick="selectItemAERO"
-                android:text="MAE 350" />
+                android:onClick="selectItemMech"
+                android:text="MAE 361" />
 
             <CheckBox
-                android:id="@+id/AMAE365"
+                android:id="@+id/MMAE371"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textColor="#fff"
                 android:theme="@style/checkBoxStyle"
-                android:onClick="selectItemAERO"
-                android:text="MAE 365" />
-
-            <CheckBox
-                android:id="@+id/AMAE371"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:textColor="#fff"
-                android:theme="@style/checkBoxStyle"
-                android:onClick="selectItemAERO"
+                android:onClick="selectItemMech"
                 android:text="MAE 371" />
 
             <CheckBox
-                android:id="@+id/AMAE373"
+                android:id="@+id/MMAE373"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textColor="#fff"
                 android:theme="@style/checkBoxStyle"
-                android:onClick="selectItemAERO"
-                android:text="MAE373"/>
+                android:onClick="selectItemMech"
+                android:text="MAE 373" />
 
             <CheckBox
-                android:id="@+id/AMAE374"
+                android:id="@+id/MMAE375"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textColor="#fff"
                 android:theme="@style/checkBoxStyle"
-                android:onClick="selectItemAERO"
-                android:text="MAE 374"/>
+                android:onClick="selectItemMech"
+                android:text="MMAE375"/>
 
             <CheckBox
-                android:id="@+id/AMAE381"
+                android:id="@+id/MMAE376"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textColor="#fff"
                 android:theme="@style/checkBoxStyle"
-                android:onClick="selectItemAERO"
-                android:text="MAE 381" />
+                android:onClick="selectItemMech"
+                android:text="MAE 376"/>
 
             <CheckBox
-                android:id="@+id/AMAE390"
+                android:id="@+id/MMAE409A"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textColor="#fff"
                 android:theme="@style/checkBoxStyle"
-                android:onClick="selectItemAERO"
-                android:text="MAE 390" />
+                android:onClick="selectItemMech"
+                android:text="MAE 409A" />
 
             <CheckBox
-                android:id="@+id/AMAE440"
+                android:id="@+id/MMAE431"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textColor="#fff"
                 android:theme="@style/checkBoxStyle"
-                android:onClick="selectItemAERO"
-            android:text="MAE 440"/>
+                android:onClick="selectItemMech"
+                android:text="MAE 431" />
 
             <CheckBox
-                android:id="@+id/AMAE452"
+                android:id="@+id/MMAE459"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textColor="#fff"
                 android:theme="@style/checkBoxStyle"
-                android:onClick="selectItemAERO"
-                android:text="MAE 452" />
+                android:onClick="selectItemMech"
+                android:text="MAE 459"/>
 
             <CheckBox
-                android:id="@+id/AMAE465"
+                android:id="@+id/MMAE471"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textColor="#fff"
                 android:theme="@style/checkBoxStyle"
-                android:onClick="selectItemAERO"
-                android:text="MAE 465" />
-            <CheckBox
-                android:id="@+id/AMAE478"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:textColor="#fff"
-                android:theme="@style/checkBoxStyle"
-                android:onClick="selectItemAERO"
-                android:text="MAE 478" />
+                android:onClick="selectItemMech"
+                android:text="MAE 471" />
 
             <CheckBox
-                android:id="@+id/MMAE479"
+                android:id="@+id/MMAE472"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textColor="#fff"
                 android:theme="@style/checkBoxStyle"
-                android:onClick="selectItemAERO"
-                android:text="MAE 479" />
-
-
+                android:onClick="selectItemMech"
+                android:text="MAE 472" />
             <CheckBox
-                android:id="@+id/AMAE434"
+                android:id="@+id/MMAE476"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textColor="#fff"
                 android:theme="@style/checkBoxStyle"
-                android:onClick="selectItemAERO"
-                android:text="MAE 434"/>
+                android:onClick="selectItemMech"
+                android:text="MAE 476" />
 
             <CheckBox
-                android:id="@+id/AMAE451"
+                android:id="@+id/MMAE490"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textColor="#fff"
                 android:theme="@style/checkBoxStyle"
-                android:onClick="selectItemAERO"
-                android:text="MAE 451" />
-
-            <CheckBox
-                android:id="@+id/AMAE453"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:textColor="#fff"
-                android:theme="@style/checkBoxStyle"
-                android:onClick="selectItemAERO"
-                android:text="MAE 453" />
-            <CheckBox
-                android:id="@+id/AMAE481"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:textColor="#fff"
-                android:theme="@style/checkBoxStyle"
-                android:onClick="selectItemAERO"
-                android:text="MAE 481" />
-
-            <CheckBox
-                android:id="@+id/MMAE483"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:textColor="#fff"
-                android:theme="@style/checkBoxStyle"
-                android:onClick="selectItemAERO"
-                android:text="MAE 483" />
-
-            <CheckBox
-                android:id="@+id/AAEROCC1"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:textColor="#fff"
-                android:theme="@style/checkBoxStyle"
-                android:onClick="selectItemAERO"
-                android:text="Select course 1" />
-            <CheckBox
-                android:id="@+id/AAEROCC2"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:textColor="#fff"
-                android:theme="@style/checkBoxStyle"
-                android:onClick="selectItemAERO"
-                android:text="Select course 2" />
-
-            <CheckBox
-                android:id="@+id/AAEROCC3"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:textColor="#fff"
-                android:theme="@style/checkBoxStyle"
-                android:onClick="selectItemAERO"
-                android:text="Select course 3" />
+                android:onClick="selectItemMech"
+                android:text="MAE 490" />
 
 
             <Button
