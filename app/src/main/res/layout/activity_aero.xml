@@ -349,7 +349,7 @@
                 android:text="MAE 481" />
 
             <CheckBox
-                android:id="@+id/MMAE483"
+                android:id="@+id/AMAE483"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textColor="#fff"
