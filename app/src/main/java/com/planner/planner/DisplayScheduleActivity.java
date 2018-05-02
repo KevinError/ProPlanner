@@ -15,6 +15,9 @@ import android.widget.Toast;
 
 import java.util.ArrayList;
 
+
+//Actviity to display schedule for the user based on their input
+
 public class DisplayScheduleActivity extends AppCompatActivity {
 
     private static final String TAG = "DisplayScheduleActivity";

@@ -15,6 +15,8 @@ import com.android.volley.toolbox.Volley;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+//Register activity for the user
+
 public class RegisterActivity extends AppCompatActivity {
 
     @Override

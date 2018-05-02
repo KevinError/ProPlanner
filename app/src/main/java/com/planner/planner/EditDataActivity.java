@@ -10,6 +10,8 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
+
+//class that allows user to edit the reminder
 public class EditDataActivity extends AppCompatActivity {
 
     private static final String TAG = "EditDataActivity";

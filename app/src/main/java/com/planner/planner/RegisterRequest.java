@@ -7,6 +7,8 @@ import com.android.volley.toolbox.StringRequest;
 import java.util.HashMap;
 import java.util.Map;
 
+//request register permission from server
+
 public class RegisterRequest extends StringRequest {
     private static final String REGISTER_REQUEST_URL = "http://cecs343planner.000webhostapp.com/Register.php";
     private Map<String, String> params;

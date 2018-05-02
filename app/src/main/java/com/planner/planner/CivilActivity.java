@@ -12,6 +12,9 @@ import org.w3c.dom.Text;
 
 import java.util.ArrayList;
 
+//Activity for Civil major
+//chooses classes for the user
+
 public class CivilActivity extends AppCompatActivity {
 
     private ArrayList<Course> selection = new ArrayList<>();
@@ -23,6 +26,7 @@ public class CivilActivity extends AppCompatActivity {
     private Course CE406,CE426,CE437,CE445,CE459,CE481,CE490,MAJORELECTIVE1,MAJORELECTIVE2;
 
     private String[] array;
+    private ArrayList<String> swap;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,6 +36,7 @@ public class CivilActivity extends AppCompatActivity {
 
         Bundle b = this.getIntent().getExtras();
         array=b.getStringArray("schedule");
+        swap = b.getStringArrayList("swap");
 
         allCourses.add(MATH122);
         allCourses.add(MATH123);
@@ -454,6 +459,11 @@ public class CivilActivity extends AppCompatActivity {
             totalCourses++;
         }
 
+        for(int i=0;i<schedule.size();i++){
+            allCourses.remove(schedule.get(i));
+        }
+
+        //add courses to scheduleArray"classes taken"
         for(int i =0; i<array.length;i++){
             if(array[i]!=null){
                 scheduleArray[totalCourses]=array[i];
@@ -461,8 +471,13 @@ public class CivilActivity extends AppCompatActivity {
             }
         }
 
+        for(int i=0; i<allCourses.size();i++){
+            swap.add(allCourses.get(i).getName());
+        }
+
         Bundle b = new Bundle();
         b.putStringArray("schedule", scheduleArray);
+        b.putStringArrayList("swap",swap);
         Intent generate = new Intent(CivilActivity.this,GeneratedSchedule.class);
         generate.putExtras(b);
         CivilActivity.this.startActivity(generate);

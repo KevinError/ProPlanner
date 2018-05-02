@@ -8,6 +8,8 @@ import android.widget.Button;
 
 import java.util.List;
 
+//list the schedule that the user indicated
+
 public class ListScheduleActivity extends AppCompatActivity {
 
     private String num="1";

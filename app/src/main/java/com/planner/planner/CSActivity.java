@@ -12,6 +12,10 @@ import org.w3c.dom.Text;
 
 import java.util.ArrayList;
 
+
+//Activity for Computer Science major
+//chooses classes for the user
+
 public class CSActivity extends AppCompatActivity {
     private String TAG = "hehe";
 
@@ -33,9 +37,7 @@ public class CSActivity extends AppCompatActivity {
 
         Bundle b = this.getIntent().getExtras();
         array=b.getStringArray("schedule");
-
-        Bundle c = this.getIntent().getExtras();
-        swap = c.getStringArrayList("swap");
+        swap = b.getStringArrayList("swap");
 
         allCourses.add(Math122);
         allCourses.add(Math123);
@@ -220,66 +222,43 @@ public class CSActivity extends AppCompatActivity {
 
     public void init(){
         CECS100 = new Course("CECS 100");
-//        CECS100.setNextCourses(CECS174);
 
         CECS105 = new Course("CECS 105");
 
         CECS174 = new Course("CECS 174");
         CECS174.setPrerequisites(CECS100);
-//        CECS174.setNextCourses(CECS228);
-//        CECS174.setNextCourses(CECS225);
-//        CECS174.setNextCourses(CECS274);
 
         CECS225 = new Course("CECS 225");
         CECS225.setPrerequisites(CECS174);
-//        CECS225.setNextCourses(CECS341);
 
         CECS228 = new Course("CECS 228");
         CECS228.setPrerequisites(CECS174);
-//        CECS228.setNextCourses(CECS229);
-//        CECS228.setNextCourses(CECS323);
-//        CECS228.setNextCourses(CECS328);
 
         CECS229 = new Course("CECS 229");
         CECS229.setPrerequisites(CECS228);
         CECS229.setPrerequisites(Math123);
-//        CECS229.setNextCourses(CECS378);
-//        CECS229.setNextCourses(EE381);
 
         CECS274 = new Course("CECS 274");
         CECS274.setPrerequisites(CECS174);
-//        CECS274.setNextCourses(CECS277);
-//        CECS274.setNextCourses(CECS282);
-//        CECS274.setNextCourses(CECS328);
-//        CECS274.setNextCourses(CECS378);
 
         CECS277 = new Course("CECS 277");
         CECS277.setPrerequisites(CECS274);
-//        CECS277.setNextCourses(CECS323);
-//        CECS277.setNextCourses(CECS343);
 
         CECS282 = new Course("CECS 282");
         CECS282.setPrerequisites(CECS274);
-//        CECS282.setNextCourses(CECS323);
-//        CECS282.setNextCourses(CECS343);
 
         ENGR101 = new Course("ENGR 101");
-//        ENGR101.setNextCourses(ENGR102);
 
         ENGR102 = new Course("ENGR 102");
         ENGR102.setPrerequisites(ENGR101);
 
         Math122 = new Course("Math 122");
-//        Math122.setNextCourses(Math123);
-//        Math122.setNextCourses(PHYS151);
 
         Math123 = new Course("Math 123");
         Math123.setPrerequisites(Math122);
-//        Math123.setNextCourses(PHYS152);
 
         PHYS151 = new Course("PHYS 151");
         PHYS151.setPrerequisites(Math122);
-//        PHYS151.setNextCourses(PHYS152);
 
         PHYS152 = new Course("PHYS 152");
         PHYS152.setPrerequisites(PHYS151);
@@ -291,9 +270,6 @@ public class CSActivity extends AppCompatActivity {
         CECS323.setPrerequisites(CECS228);
         CECS323.setPrerequisites(CECS277);
         CECS323.setPrerequisites(CECS282);
-//        CECS323.setNextCourses(CoreElective);
-//        CECS323.setNextCourses(AppliedElective);
-//        CECS323.setNextCourses(SeniorProjectA);
 
         CECS326 = new Course("CECS 326");
         CECS326.setPrerequisites(CECS282);
@@ -341,7 +317,6 @@ public class CSActivity extends AppCompatActivity {
         SeniorProjectA.setPrerequisites(CECS323);
         SeniorProjectA.setPrerequisites(ENGR350);
         SeniorProjectA.setPrerequisites(CECS343);
-//        SeniorProjectA.setNextCourses(SeniorProjectB);
 
         SeniorProjectB = new Course("Senior Project B");
         SeniorProjectB.setPrerequisites(SeniorProjectA);
@@ -374,6 +349,11 @@ public class CSActivity extends AppCompatActivity {
             totalCourses++;
         }
 
+        for(int i=0;i<schedule.size();i++){
+            allCourses.remove(schedule.get(i));
+        }
+
+        //add courses to scheduleArray"classes taken"
         for(int i =0; i<array.length;i++){
             if(array[i]!=null){
                 scheduleArray[totalCourses]=array[i];
@@ -381,14 +361,15 @@ public class CSActivity extends AppCompatActivity {
             }
         }
 
+        for(int i=0; i<allCourses.size();i++){
+            swap.add(allCourses.get(i).getName());
+        }
+
         Bundle b = new Bundle();
         b.putStringArray("schedule", scheduleArray);
-
-        Bundle c = new Bundle();
-        c.putStringArrayList("swap",swap);
+        b.putStringArrayList("swap",swap);
         Intent generate = new Intent(CSActivity.this,GeneratedSchedule.class);
         generate.putExtras(b);
-        generate.putExtras(c);
         CSActivity.this.startActivity(generate);
 
     }

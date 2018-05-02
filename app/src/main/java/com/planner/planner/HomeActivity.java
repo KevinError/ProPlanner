@@ -9,6 +9,8 @@ import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.widget.Button;
 
+//Home activity with 3 options
+
 public class HomeActivity extends AppCompatActivity {
 
     @Override

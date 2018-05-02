@@ -15,6 +15,8 @@ import android.widget.Toast;
 
 import java.util.ArrayList;
 
+//This will generate the classes for user and display it to them
+
 public class GeneratedSchedule extends AppCompatActivity {
 
     private ArrayList<String> swap;
@@ -60,9 +62,8 @@ public class GeneratedSchedule extends AppCompatActivity {
             course5.setText(array[4]);
         }
 
-        Bundle c = this.getIntent().getExtras();
-        if(c.getStringArrayList("swap")!=null)
-            swap = c.getStringArrayList("swap");
+        if(b.getStringArrayList("swap")!=null)
+            swap = b.getStringArrayList("swap");
 
         course1.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -79,6 +80,69 @@ public class GeneratedSchedule extends AppCompatActivity {
             }
         });
 
+        course2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                clicked=array[1];
+                Bundle c = new Bundle();
+                c.putStringArray("schedule",array);
+                c.putInt("int",1);
+                c.putStringArrayList("swap",swap);
+                c.putString("clicked",clicked);
+                Intent generate = new Intent(GeneratedSchedule.this,SwapActivity.class);
+                generate.putExtras(c);
+                GeneratedSchedule.this.startActivity(generate);
+            }
+        });
+
+        course3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                clicked=array[2];
+                Bundle c = new Bundle();
+                c.putStringArray("schedule",array);
+                c.putInt("int",2);
+                c.putStringArrayList("swap",swap);
+                c.putString("clicked",clicked);
+                Intent generate = new Intent(GeneratedSchedule.this,SwapActivity.class);
+                generate.putExtras(c);
+                GeneratedSchedule.this.startActivity(generate);
+            }
+        });
+
+        course4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                clicked=array[3];
+                Bundle c = new Bundle();
+                c.putStringArray("schedule",array);
+                c.putInt("int",3);
+                c.putStringArrayList("swap",swap);
+                c.putString("clicked",clicked);
+                Intent generate = new Intent(GeneratedSchedule.this,SwapActivity.class);
+                generate.putExtras(c);
+                GeneratedSchedule.this.startActivity(generate);
+            }
+        });
+
+        course5.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                clicked=array[4];
+                Bundle c = new Bundle();
+                c.putStringArray("schedule",array);
+                c.putInt("int",4);
+                c.putStringArrayList("swap",swap);
+                c.putString("clicked",clicked);
+                Intent generate = new Intent(GeneratedSchedule.this,SwapActivity.class);
+                generate.putExtras(c);
+                GeneratedSchedule.this.startActivity(generate);
+            }
+        });
+
+
+
+        //save button to save schedule
         Button save = (Button) findViewById(R.id.save);
 
         save.setOnClickListener(new View.OnClickListener() {
@@ -94,6 +158,8 @@ public class GeneratedSchedule extends AppCompatActivity {
 
             }
         });
+    }
+    public void onBackPressed(){
     }
 
 }

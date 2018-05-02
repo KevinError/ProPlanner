@@ -9,6 +9,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 
+//allows the user to save to a schedule 1-5
 public class SaveToActivity extends AppCompatActivity {
 
     private String num;

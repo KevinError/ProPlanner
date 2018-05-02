@@ -1,10 +1,12 @@
 package com.planner.planner;
 
 import android.content.Intent;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.AppCompatRadioButton;
 import android.support.v7.widget.Toolbar;
 import android.util.Log;
 import android.view.View;
@@ -12,6 +14,8 @@ import android.widget.RadioButton;
 import android.widget.RadioGroup;
 
 import java.util.ArrayList;
+
+//allows the user to swap classes with untaken courses to optimize their schedule
 
 public class SwapActivity extends AppCompatActivity {
 
@@ -38,9 +42,10 @@ public class SwapActivity extends AppCompatActivity {
         String temp;
         for (int i = 0; i < buttons ; i++) {
             temp =swap.get(i);
-            RadioButton rbn = new RadioButton(this);
+            AppCompatRadioButton rbn = new AppCompatRadioButton(this);
             rbn.setId(i+100);
             rbn.setText(temp);
+            rbn.setTextColor(Color.WHITE);
             rgp.addView(rbn);
         }
 

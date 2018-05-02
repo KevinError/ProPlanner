@@ -9,6 +9,10 @@ import android.widget.CheckBox;
 
 import java.util.ArrayList;
 
+
+//Activity for Computer Engineer major
+//chooses classes for the user
+
 public class CompEngrActivity extends AppCompatActivity {
 
     private ArrayList<Course> selection = new ArrayList<>();
@@ -20,6 +24,7 @@ public class CompEngrActivity extends AppCompatActivity {
             MajorElective1,MajorElective2;
 
     private String[] array;
+    private ArrayList<String> swap;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,6 +33,7 @@ public class CompEngrActivity extends AppCompatActivity {
 
         Bundle b = this.getIntent().getExtras();
         array=b.getStringArray("schedule");
+        swap = b.getStringArrayList("swap");
 
         init();
 
@@ -358,6 +364,11 @@ public class CompEngrActivity extends AppCompatActivity {
             totalCourses++;
         }
 
+        for(int i=0;i<schedule.size();i++){
+            allCourses.remove(schedule.get(i));
+        }
+
+        //add courses to scheduleArray"classes taken"
         for(int i =0; i<array.length;i++){
             if(array[i]!=null){
                 scheduleArray[totalCourses]=array[i];
@@ -365,8 +376,13 @@ public class CompEngrActivity extends AppCompatActivity {
             }
         }
 
+        for(int i=0; i<allCourses.size();i++){
+            swap.add(allCourses.get(i).getName());
+        }
+
         Bundle b = new Bundle();
         b.putStringArray("schedule", scheduleArray);
+        b.putStringArrayList("swap",swap);
         Intent generate = new Intent(CompEngrActivity.this,GeneratedSchedule.class);
         generate.putExtras(b);
         CompEngrActivity.this.startActivity(generate);

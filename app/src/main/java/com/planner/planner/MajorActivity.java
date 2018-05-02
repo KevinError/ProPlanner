@@ -13,6 +13,9 @@ import android.widget.Spinner;
 
 import java.util.ArrayList;
 
+
+//allows the user to choose major
+
 public class MajorActivity extends AppCompatActivity {
 
     private String[] array;
@@ -28,8 +31,7 @@ public class MajorActivity extends AppCompatActivity {
         Bundle b = this.getIntent().getExtras();
         array =b.getStringArray("schedule");
 
-        Bundle c = this.getIntent().getExtras();
-        swap = c.getStringArrayList("swap");
+        swap = b.getStringArrayList("swap");
 
 
         ArrayAdapter<String> myAdapter = new ArrayAdapter<String>(MajorActivity.this, R.layout.spinner_style, getResources().getStringArray(R.array.majors));
@@ -46,6 +48,7 @@ public class MajorActivity extends AppCompatActivity {
                 else if(i == 1){
                     Bundle b = new Bundle();
                     b.putStringArray("schedule", array);
+                    b.putStringArrayList("swap",swap);
                     Intent generate = new Intent(MajorActivity.this,AeroActivity.class);
                     generate.putExtras(b);
                     MajorActivity.this.startActivity(generate);
@@ -54,6 +57,7 @@ public class MajorActivity extends AppCompatActivity {
                 else if(i==2){
                     Bundle b = new Bundle();
                     b.putStringArray("schedule", array);
+                    b.putStringArrayList("swap",swap);
                     Intent generate = new Intent(MajorActivity.this,BMEActivity.class);
                     generate.putExtras(b);
                     MajorActivity.this.startActivity(generate);
@@ -62,6 +66,7 @@ public class MajorActivity extends AppCompatActivity {
                 else if(i==3){
                     Bundle b = new Bundle();
                     b.putStringArray("schedule", array);
+                    b.putStringArrayList("swap",swap);
                     Intent generate = new Intent(MajorActivity.this,ChemActivity.class);
                     generate.putExtras(b);
                     MajorActivity.this.startActivity(generate);
@@ -70,6 +75,7 @@ public class MajorActivity extends AppCompatActivity {
                 else if(i==4){
                     Bundle b = new Bundle();
                     b.putStringArray("schedule", array);
+                    b.putStringArrayList("swap",swap);
                     Intent generate = new Intent(MajorActivity.this,CivilActivity.class);
                     generate.putExtras(b);
                     MajorActivity.this.startActivity(generate);
@@ -78,25 +84,25 @@ public class MajorActivity extends AppCompatActivity {
                 else if(i==5){
                     Bundle b = new Bundle();
                     b.putStringArray("schedule", array);
+                    b.putStringArrayList("swap",swap);
                     Intent generate = new Intent(MajorActivity.this,CompEngrActivity.class);
                     generate.putExtras(b);
-                    startActivity(generate);
+                    MajorActivity.this.startActivity(generate);
                 }
                 //Computer Science
                 else if(i==6){
                     Bundle b = new Bundle();
                     b.putStringArray("schedule", array);
-                    Bundle c = new Bundle();
-                    c.putStringArrayList("swap",swap);
+                    b.putStringArrayList("swap",swap);
                     Intent generate = new Intent(MajorActivity.this,CSActivity.class);
                     generate.putExtras(b);
-                    generate.putExtras(c);
                     MajorActivity.this.startActivity(generate);
                 }
                 //Electrical
                 else if(i==7){
                     Bundle b = new Bundle();
                     b.putStringArray("schedule", array);
+                    b.putStringArrayList("swap",swap);
                     Intent generate = new Intent(MajorActivity.this,EEActivity.class);
                     generate.putExtras(b);
                     MajorActivity.this.startActivity(generate);
@@ -105,9 +111,10 @@ public class MajorActivity extends AppCompatActivity {
                 else if(i==8){
                     Bundle b = new Bundle();
                     b.putStringArray("schedule", array);
+                    b.putStringArrayList("swap",swap);
                     Intent generate = new Intent(MajorActivity.this,MechActivity.class);
                     generate.putExtras(b);
-                    startActivity(generate);
+                    MajorActivity.this.startActivity(generate);
                 }
 
             }

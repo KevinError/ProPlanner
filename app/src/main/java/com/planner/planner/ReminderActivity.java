@@ -8,6 +8,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+//shows the reminder page to user
 public class ReminderActivity extends AppCompatActivity {
 
     private static final String TAG = "ReminderActivity";

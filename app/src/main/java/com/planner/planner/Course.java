@@ -3,6 +3,8 @@ package com.planner.planner;
 
 import java.util.ArrayList;
 
+//Java class that defines what a course is.
+//contains prerequisities
 public class Course {
 
     private Course[] prerequisites = new Course[10];

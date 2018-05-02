@@ -11,6 +11,10 @@ import android.widget.CheckBox;
 
 import java.util.ArrayList;
 
+
+//Activity for Chemical major
+//chooses classes for the user
+
 public class ChemActivity extends AppCompatActivity {
 
     private ArrayList<Course> selection = new ArrayList<>();
@@ -24,6 +28,7 @@ public class ChemActivity extends AppCompatActivity {
     private Course CourseChoice1, CourseChoice2, CourseChoice3;
 
     private String[] array;
+    private ArrayList<String> swap;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,6 +37,7 @@ public class ChemActivity extends AppCompatActivity {
 
         Bundle b = this.getIntent().getExtras();
         array=b.getStringArray("schedule");
+        swap = b.getStringArrayList("swap");
 
         init();
 
@@ -39,18 +45,17 @@ public class ChemActivity extends AppCompatActivity {
         allCourses.add(MATH123);
         allCourses.add(PHYS151);
         allCourses.add(PHYS152);
+        allCourses.add(ENGR101);
+        allCourses.add(ENGR102);
+        allCourses.add(CHE100);
+        allCourses.add(CHEM111A);
+        allCourses.add(CHEM111B);
+        allCourses.add(CE205);
 
         allCourses.add(CHE200);
         allCourses.add(CHE210);
         allCourses.add(CHE220);
 
-        allCourses.add(CHEM111A);
-        allCourses.add(CHEM111B);
-        allCourses.add(CE205);
-
-        allCourses.add(ENGR101);
-        allCourses.add(ENGR102);
-        allCourses.add(CHE100);
 
         allCourses.add(MATH224);
         allCourses.add(CHEM220A);
@@ -320,6 +325,12 @@ public class ChemActivity extends AppCompatActivity {
             scheduleArray[totalCourses]=temp.getName();
             totalCourses++;
         }
+
+        for(int i=0;i<schedule.size();i++){
+            allCourses.remove(schedule.get(i));
+        }
+
+        //add courses to scheduleArray"classes taken"
         for(int i =0; i<array.length;i++){
             if(array[i]!=null){
                 scheduleArray[totalCourses]=array[i];
@@ -327,8 +338,13 @@ public class ChemActivity extends AppCompatActivity {
             }
         }
 
+        for(int i=0; i<allCourses.size();i++){
+            swap.add(allCourses.get(i).getName());
+        }
+
         Bundle b = new Bundle();
         b.putStringArray("schedule", scheduleArray);
+        b.putStringArrayList("swap",swap);
         Intent generate = new Intent(ChemActivity.this,GeneratedSchedule.class);
         generate.putExtras(b);
         ChemActivity.this.startActivity(generate);

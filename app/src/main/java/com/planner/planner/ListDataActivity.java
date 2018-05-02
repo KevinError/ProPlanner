@@ -16,6 +16,8 @@ import android.widget.Toast;
 import java.util.ArrayList;
 import java.util.List;
 
+//Lists all reminders that user inputed
+
 public class ListDataActivity extends AppCompatActivity {
 
     private static final String TAG = "ListDataActivity";
