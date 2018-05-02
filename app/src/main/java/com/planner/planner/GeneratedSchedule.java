@@ -13,7 +13,12 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import java.util.ArrayList;
+
 public class GeneratedSchedule extends AppCompatActivity {
+
+    private ArrayList<String> swap;
+    private String clicked;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -54,6 +59,25 @@ public class GeneratedSchedule extends AppCompatActivity {
             course4.setText(array[3]);
             course5.setText(array[4]);
         }
+
+        Bundle c = this.getIntent().getExtras();
+        if(c.getStringArrayList("swap")!=null)
+            swap = c.getStringArrayList("swap");
+
+        course1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                clicked=array[0];
+                Bundle c = new Bundle();
+                c.putStringArray("schedule",array);
+                c.putInt("int",0);
+                c.putStringArrayList("swap",swap);
+                c.putString("clicked",clicked);
+                Intent generate = new Intent(GeneratedSchedule.this,SwapActivity.class);
+                generate.putExtras(c);
+                GeneratedSchedule.this.startActivity(generate);
+            }
+        });
 
         Button save = (Button) findViewById(R.id.save);
 

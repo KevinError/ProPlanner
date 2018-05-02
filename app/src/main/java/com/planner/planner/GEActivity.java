@@ -171,10 +171,22 @@ public class    GEActivity extends AppCompatActivity {
         scheduleArray[0] = allCourses.get(0).getName();
         Log.d(TAG,allCourses.get(0).getName());
         scheduleArray[1] = allCourses.get(1).getName();
+
         Bundle b = new Bundle();
         b.putStringArray("schedule", scheduleArray);
+
+        ArrayList<String> swap = new ArrayList<>();
+        for(int i =0;i<allCourses.size();i++){
+            if(allCourses.get(i)!=null){
+                swap.add(allCourses.get(i).getName());
+            }
+        }
+
+        Bundle c = new Bundle();
+        c.putStringArrayList("swap",swap);
         Intent generate = new Intent(GEActivity.this, MajorActivity.class);
         generate.putExtras(b);
+        generate.putExtras(c);
         GEActivity.this.startActivity(generate);
     }
 

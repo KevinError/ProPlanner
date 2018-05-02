@@ -9,7 +9,7 @@ import android.database.sqlite.SQLiteOpenHelper;
 import android.util.Log;
 public class DatabaseSchedule extends SQLiteOpenHelper {
 
-    private static final String TAG = "DatabaseHelper";
+    private static final String TAG = "DatabaseSchedule";
 
     private String tName;
     private static final String COL1 = "ID";
@@ -62,48 +62,17 @@ public class DatabaseSchedule extends SQLiteOpenHelper {
         return data;
     }
 
-    /**
-     * Returns only the ID that matches the name passed in
-     * @param name
-     * @return
-     */
-    public Cursor getItemID(String name){
-        SQLiteDatabase db = this.getWritableDatabase();
-        String query = "SELECT " + COL1 + " FROM " + tName +
-                " WHERE " + COL2 + " = '" + name + "'";
-        Cursor data = db.rawQuery(query, null);
-        return data;
-    }
 
-    /**
-     * Updates the name field
-     * @param newName
-     * @param id
-     * @param oldName
-     */
-    public void updateName(String newName, int id, String oldName){
-        SQLiteDatabase db = this.getWritableDatabase();
-        String query = "UPDATE " + tName+ " SET " + COL2 +
-                " = '" + newName + "' WHERE " + COL1 + " = '" + id + "'" +
-                " AND " + COL2 + " = '" + oldName + "'";
-        Log.d(TAG, "updateName: query: " + query);
-        Log.d(TAG, "updateName: Setting name to " + newName);
-        db.execSQL(query);
-    }
 
-    /**
-     * Delete from database
-     * @param id
-     * @param name
-     */
-    public void deleteName(int id, String name){
+
+    public void dropTable(String t){
+        Log.d(TAG,"before");
         SQLiteDatabase db = this.getWritableDatabase();
-        String query = "DELETE FROM " + tName + " WHERE "
-                + COL1 + " = '" + id + "'" +
-                " AND " + COL2 + " = '" + name + "'";
-        Log.d(TAG, "deleteName: query: " + query);
-        Log.d(TAG, "deleteName: Deleting " + name + " from database.");
-        db.execSQL(query);
+        Log.d(TAG,"before2");
+        db.execSQL("DROP TABLE "+t);
+        Log.d(TAG,"after");
+        onCreate(db);
+        Log.d(TAG,"after2");
     }
 
 }

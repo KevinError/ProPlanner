@@ -23,10 +23,15 @@ public class ChemActivity extends AppCompatActivity {
     private Course CHE310,CHE320,CHE330, CHE420, CHE430, CHE440, CHE450, CHE460, CHE470, CHEM375, MATH370A;
     private Course CourseChoice1, CourseChoice2, CourseChoice3;
 
+    private String[] array;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_chem);
+
+        Bundle b = this.getIntent().getExtras();
+        array=b.getStringArray("schedule");
 
         init();
 
@@ -309,11 +314,17 @@ public class ChemActivity extends AppCompatActivity {
         }
 
         //convert arraylist to array
-        String[] scheduleArray = new String[schedule.size()];
+        String[] scheduleArray = new String[schedule.size()+2];
         int totalCourses = 0;
         for(Course temp: schedule){
             scheduleArray[totalCourses]=temp.getName();
             totalCourses++;
+        }
+        for(int i =0; i<array.length;i++){
+            if(array[i]!=null){
+                scheduleArray[totalCourses]=array[i];
+                totalCourses++;
+            }
         }
 
         Bundle b = new Bundle();

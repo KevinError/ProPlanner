@@ -7,10 +7,12 @@
     android:background="#303030"
     tools:context="com.planner.planner.HomeActivity">
 
+
+
     <TextView
         android:id="@+id/logo"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="200dp"
+        android:layout_height="75dp"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="8dp"
@@ -20,7 +22,8 @@
         android:fontFamily="@font/billabong"
         android:text="Planner"
         android:textColor="#fff"
-        android:textSize="36sp"
+        android:textSize="50sp"
+        android:gravity="center"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.501"
@@ -30,13 +33,13 @@
 
     <Button
         android:id="@+id/gs"
-        android:layout_width="300dp"
+        android:layout_width="280dp"
         android:layout_height="wrap_content"
         android:layout_marginBottom="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
-        android:background="#FFDF00"
+        android:background="@drawable/roundedbutton"
         android:paddingBottom="15dp"
         android:paddingTop="15dp"
         android:text="Generate Schedule"
@@ -44,17 +47,18 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.539" />
 
     <Button
         android:id="@+id/ls"
-        android:layout_width="300dp"
+        android:layout_width="280dp"
         android:layout_height="wrap_content"
         android:layout_marginBottom="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
-        android:background="#FFDF00"
+        android:background="@drawable/roundedbutton"
         android:paddingBottom="15dp"
         android:paddingTop="15dp"
         android:text="List of Schedules"
@@ -63,17 +67,17 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.637" />
+        app:layout_constraintVertical_bias="0.669" />
 
     <Button
         android:id="@+id/reminders"
-        android:layout_width="300dp"
+        android:layout_width="280dp"
         android:layout_height="wrap_content"
         android:layout_marginBottom="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
-        android:background="#FFDF00"
+        android:background="@drawable/roundedbutton"
         android:paddingBottom="15dp"
         android:paddingTop="15dp"
         android:text="Reminders"
@@ -82,6 +86,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.778" />
+        app:layout_constraintVertical_bias="0.806" />
 
 </android.support.constraint.ConstraintLayout>

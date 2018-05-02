@@ -23,6 +23,7 @@ public class CSActivity extends AppCompatActivity {
     private Course EE381,ENGR350,CECS424,CoreElective,AppliedElective,SeniorProjectA,SeniorProjectB;
 
     private String[] array;
+    private ArrayList<String> swap;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,6 +33,9 @@ public class CSActivity extends AppCompatActivity {
 
         Bundle b = this.getIntent().getExtras();
         array=b.getStringArray("schedule");
+
+        Bundle c = this.getIntent().getExtras();
+        swap = c.getStringArrayList("swap");
 
         allCourses.add(Math122);
         allCourses.add(Math123);
@@ -379,8 +383,12 @@ public class CSActivity extends AppCompatActivity {
 
         Bundle b = new Bundle();
         b.putStringArray("schedule", scheduleArray);
+
+        Bundle c = new Bundle();
+        c.putStringArrayList("swap",swap);
         Intent generate = new Intent(CSActivity.this,GeneratedSchedule.class);
         generate.putExtras(b);
+        generate.putExtras(c);
         CSActivity.this.startActivity(generate);
 
     }

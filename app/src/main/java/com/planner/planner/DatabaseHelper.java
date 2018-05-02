@@ -11,7 +11,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 
     private static final String TAG = "DatabaseHelper";
 
-    private static final String TABLE_NAME = "s1";
+    private static final String TABLE_NAME = "reminder";
     private static final String COL1 = "ID";
     private static final String COL2 = "name";
 

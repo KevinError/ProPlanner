@@ -68,7 +68,24 @@
             android:label="@string/title_activity_display_schedule"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".ListScheduleActivity" />
-        <activity android:name=".SaveToActivity"></activity>
+        <activity android:name=".SaveToActivity" />
+        <activity
+            android:name=".AeroActivity"
+            android:label="@string/title_activity_aero"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".MechActivity" />
+        <activity
+            android:name=".EEActivity"
+            android:label="@string/title_activity_ee"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".CivilActivity"
+            android:label="@string/title_activity_civil"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".SwapActivity"
+            android:label="@string/title_activity_swap"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
 </manifest>

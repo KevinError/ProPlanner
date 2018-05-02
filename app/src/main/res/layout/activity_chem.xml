@@ -324,7 +324,7 @@
                 android:layout_gravity="center_horizontal"
                 android:layout_marginBottom="16dp"
                 android:layout_marginTop="16dp"
-                android:background="#FFDF00"
+                android:background="@drawable/roundedbutton"
                 android:onClick="generateCHEM"
                 android:text="Generate" />
 

@@ -41,4 +41,7 @@ public class HomeActivity extends AppCompatActivity {
         });
     }
 
+    public void onBackPressed(){
+
+    }
 }

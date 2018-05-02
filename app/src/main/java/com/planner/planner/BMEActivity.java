@@ -20,11 +20,16 @@ public class BMEActivity extends AppCompatActivity {
             BME100,BME201,BME210,BME211,BME300,BME304,BME311,BME320,BME350,BME360,BME370,BME490A,BME490B,
             RSCH361,MajorElective;
 
+    private String[] array;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_bme);
+
+        Bundle b = this.getIntent().getExtras();
+        array=b.getStringArray("schedule");
         init();
 
         allCourses.add(MATH122);
@@ -303,11 +308,18 @@ public class BMEActivity extends AppCompatActivity {
         }
 
         //convert arraylist to array
-        String[] scheduleArray = new String[schedule.size()];
+        String[] scheduleArray = new String[schedule.size()+2];
         int totalCourses = 0;
         for(Course temp: schedule){
             scheduleArray[totalCourses]=temp.getName();
             totalCourses++;
+        }
+
+        for(int i =0; i<array.length;i++){
+            if(array[i]!=null){
+                scheduleArray[totalCourses]=array[i];
+                totalCourses++;
+            }
         }
 
         Bundle b = new Bundle();

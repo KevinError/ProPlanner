@@ -74,7 +74,7 @@ public class DisplayScheduleActivity extends AppCompatActivity {
             listData.add(data.getString(1));
         }
         //create the list adapter and set the adapter
-        ListAdapter adapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, listData);
+        ListAdapter adapter = new ArrayAdapter<String>(DisplayScheduleActivity.this, R.layout.custom_textview, listData);
         mListView.setAdapter(adapter);
 
     }

@@ -14,6 +14,7 @@ import android.widget.ListView;
 import android.widget.Toast;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class ListDataActivity extends AppCompatActivity {
 
@@ -30,6 +31,7 @@ public class ListDataActivity extends AppCompatActivity {
         mListView = (ListView) findViewById(R.id.listView);
         mDatabaseHelper = new DatabaseHelper(this);
 
+
         populateListView();
     }
 
@@ -45,7 +47,7 @@ public class ListDataActivity extends AppCompatActivity {
             listData.add(data.getString(1));
         }
         //create the list adapter and set the adapter
-        ListAdapter adapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, listData);
+        ListAdapter adapter = new ArrayAdapter<String>(ListDataActivity.this, R.layout.custom_textview, listData);
         mListView.setAdapter(adapter);
 
         //set an onItemClickListener to the ListView
@@ -80,5 +82,9 @@ public class ListDataActivity extends AppCompatActivity {
      */
     private void toastMessage(String message){
         Toast.makeText(this,message, Toast.LENGTH_SHORT).show();
+    }
+
+    public void onBackPressed(){
+        startActivity(new Intent(ListDataActivity.this,ReminderActivity.class));
     }
 }

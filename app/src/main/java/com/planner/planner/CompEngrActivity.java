@@ -19,11 +19,16 @@ public class CompEngrActivity extends AppCompatActivity {
             CECS326,CECS346,CECS347,CECS360,CECS440,CECS447,CECS460,CECS463,CECS490A,CECS490B,
             MajorElective1,MajorElective2;
 
+    private String[] array;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_comp_engr);
+
+        Bundle b = this.getIntent().getExtras();
+        array=b.getStringArray("schedule");
+
         init();
 
         allCourses.add(MATH122);
@@ -346,11 +351,18 @@ public class CompEngrActivity extends AppCompatActivity {
         }
 
         //convert arraylist to array
-        String[] scheduleArray = new String[schedule.size()];
+        String[] scheduleArray = new String[schedule.size()+2];
         int totalCourses = 0;
         for(Course temp: schedule){
             scheduleArray[totalCourses]=temp.getName();
             totalCourses++;
+        }
+
+        for(int i =0; i<array.length;i++){
+            if(array[i]!=null){
+                scheduleArray[totalCourses]=array[i];
+                totalCourses++;
+            }
         }
 
         Bundle b = new Bundle();

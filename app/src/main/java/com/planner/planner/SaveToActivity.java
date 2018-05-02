@@ -1,8 +1,10 @@
 package com.planner.planner;
 
 import android.content.Intent;
+import android.database.sqlite.SQLiteDatabase;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
@@ -11,6 +13,7 @@ public class SaveToActivity extends AppCompatActivity {
 
     private String num;
     DatabaseSchedule databaseSchedule;
+    String TAG = "SaveToActivity";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,9 +31,12 @@ public class SaveToActivity extends AppCompatActivity {
         Button saveButton5 = (Button) findViewById(R.id.saveButton5);
 
 
+
         saveButton1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                DatabaseSchedule temp = new DatabaseSchedule("s1",SaveToActivity.this);
+                temp.dropTable("s1");
                 num="s1";
                 databaseSchedule = new DatabaseSchedule(num,SaveToActivity.this);
 
@@ -47,6 +53,8 @@ public class SaveToActivity extends AppCompatActivity {
         saveButton2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                DatabaseSchedule temp = new DatabaseSchedule("s2",SaveToActivity.this);
+                temp.dropTable("s2");
                 num="s2";
                 databaseSchedule = new DatabaseSchedule(num,SaveToActivity.this);
 
@@ -63,6 +71,10 @@ public class SaveToActivity extends AppCompatActivity {
         saveButton3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+
+                DatabaseSchedule temp = new DatabaseSchedule("s3",SaveToActivity.this);
+                temp.dropTable("s3");
+
                 num="s3";
                 databaseSchedule = new DatabaseSchedule(num,SaveToActivity.this);
 
@@ -79,6 +91,9 @@ public class SaveToActivity extends AppCompatActivity {
         saveButton4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+
+                DatabaseSchedule temp = new DatabaseSchedule("s4",SaveToActivity.this);
+                temp.dropTable("s4");
                 num="s4";
                 databaseSchedule = new DatabaseSchedule(num,SaveToActivity.this);
 
@@ -95,6 +110,9 @@ public class SaveToActivity extends AppCompatActivity {
         saveButton5.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+
+                DatabaseSchedule temp = new DatabaseSchedule("s5",SaveToActivity.this);
+                temp.dropTable("s5");
                 num="s5";
                 databaseSchedule = new DatabaseSchedule(num,SaveToActivity.this);
 
