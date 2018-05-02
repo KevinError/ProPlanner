@@ -2,7 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.planner.planner">
 
-    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
@@ -10,7 +10,7 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
+        android:theme="@style/AppTheme.NoActionBar">
         <activity android:name=".LoginActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -18,7 +18,74 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".RegisterActivity"></activity>
+        <activity android:name=".RegisterActivity" />
+        <activity
+            android:name=".MajorActivity"
+            android:label="@string/title_activity_major"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".CSActivity"
+            android:label="@string/title_activity_cs"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".GeneratedSchedule"
+            android:label="@string/title_activity_generated_schedule"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".GEActivity"
+            android:label="@string/title_activity_ge"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ChemActivity"
+            android:label="@string/title_activity_chem"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".CompEngrActivity"
+            android:label="@string/title_activity_comp_engr"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".BMEActivity"
+            android:label="@string/title_activity_bme"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".HomeActivity"
+            android:label="@string/title_activity_home"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ReminderActivity"
+            android:label="@string/title_activity_reminder"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ListDataActivity"
+            android:label="@string/title_activity_list_data"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".EditDataActivity"
+            android:label="@string/title_activity_edit_data"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".DisplayScheduleActivity"
+            android:label="@string/title_activity_display_schedule"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".ListScheduleActivity" />
+        <activity android:name=".SaveToActivity" />
+        <activity
+            android:name=".AeroActivity"
+            android:label="@string/title_activity_aero"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".MechActivity" />
+        <activity
+            android:name=".EEActivity"
+            android:label="@string/title_activity_ee"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".CivilActivity"
+            android:label="@string/title_activity_civil"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".SwapActivity"
+            android:label="@string/title_activity_swap"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
 </manifest>

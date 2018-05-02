@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#303030"
+    tools:context=".BMEActivity">
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/bioMed"
+                android:layout_width="348dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="7dp"
+                android:text="Biomedical Courses:"
+                android:fontFamily="@font/billabong"
+                android:textSize="25sp"
+                android:textColor="#FFDF00"
+                android:textAppearance="@android:style/TextAppearance.Medium" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="*Please check all the courses that you have taken"
+                android:layout_gravity="center_horizontal"
+                android:textColor="#fff" />
+
+            <CheckBox
+                android:id="@+id/BIOMATH122"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#fff"
+                android:theme="@style/checkBoxStyle"
+                android:onClick="selectItemBME"
+                android:text="MATH 122" />
+
+            <CheckBox
+                android:id="@+id/BIOMATH123"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#fff"
+                android:theme="@style/checkBoxStyle"
+                android:onClick="selectItemBME"
+                android:text="MATH 123" />
+
+            <CheckBox
+                android:id="@+id/BIOMATH224"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#fff"
+                android:theme="@style/checkBoxStyle"
+                android:onClick="selectItemBME"
+                android:text="MATH 224" />
+
+            <CheckBox
+                android:id="@+id/BIOMATH249"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#fff"
+                android:theme="@style/checkBoxStyle"
+                android:onClick="selectItemBME"
+                android:text="MATH 249" />
+
+            <CheckBox
+                android:id="@+id/BIOENGR101"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#fff"
+                android:theme="@style/checkBoxStyle"
+                android:onClick="selectItemBME"
+                android:text="ENGR 101" />
+
+            <CheckBox
+                android:id="@+id/BIOENGR102"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#fff"
+                android:theme="@style/checkBoxStyle"
+                android:onClick="selectItemBME"
+                android:text="ENGR 102" />
+
+            <CheckBox
+                android:id="@+id/BIOCHEM111A"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#fff"
+                android:theme="@style/checkBoxStyle"
+                android:onClick="selectItemBME"
+                android:text="CHEM 111A" />
+
+            <CheckBox
+                android:id="@+id/BIOCHEM111B"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#fff"
+                android:theme="@style/checkBoxStyle"
+                android:onClick="selectItemBME"
+                android:text="CHEM 111B" />
+
+            <CheckBox
+                android:id="@+id/BIOPHYS151"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#fff"
+                android:theme="@style/checkBoxStyle"
+                android:onClick="selectItemBME"
+                android:text="PHYS 151" />
+
+            <CheckBox
+                android:id="@+id/BIOBIO200"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#fff"
+                android:theme="@style/checkBoxStyle"
+                android:onClick="selectItemBME"
+                android:text="BIO 200" />
+
+            <CheckBox
+                android:id="@+id/BIOBIO207"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#fff"
+                android:theme="@style/checkBoxStyle"
+                android:onClick="selectItemBME"
+                android:text="BIO 207" />
+
+            <CheckBox
+                android:id="@+id/EE380"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#fff"
+                android:theme="@style/checkBoxStyle"
+                android:onClick="selectItemBME"
+                android:text="EE 380" />
+
+            <CheckBox
+                android:id="@+id/BME100"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#fff"
+                android:theme="@style/checkBoxStyle"
+                android:onClick="selectItemBME"
+                android:text="BME 100" />
+
+            <CheckBox
+                android:id="@+id/BME201"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#fff"
+                android:theme="@style/checkBoxStyle"
+                android:onClick="selectItemBME"
+                android:text="BME 201" />
+
+            <CheckBox
+                android:id="@+id/BME210"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#fff"
+                android:theme="@style/checkBoxStyle"
+                android:onClick="selectItemBME"
+                android:text="BME 210" />
+
+            <CheckBox
+                android:id="@+id/BME211"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#fff"
+                android:theme="@style/checkBoxStyle"
+                android:onClick="selectItemBME"
+                android:text="BME 211" />
+
+            <CheckBox
+                android:id="@+id/BME300"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#fff"
+                android:theme="@style/checkBoxStyle"
+                android:text="BME 300" />
+
+            <CheckBox
+                android:id="@+id/BME304"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#fff"
+                android:theme="@style/checkBoxStyle"
+                android:onClick="selectItemBME"
+                android:text="BME 304" />
+
+            <CheckBox
+                android:id="@+id/BME311"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#fff"
+                android:theme="@style/checkBoxStyle"
+                android:onClick="selectItemBME"
+                android:text="BME 311" />
+
+            <CheckBox
+                android:id="@+id/BME320"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#fff"
+                android:theme="@style/checkBoxStyle"
+                android:onClick="selectItemBME"
+                android:text="BME 320" />
+
+            <CheckBox
+                android:id="@+id/BME350"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#fff"
+                android:theme="@style/checkBoxStyle"
+                android:onClick="selectItemBME"
+                android:text="BME 350" />
+
+            <CheckBox
+                android:id="@+id/BME360"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#fff"
+                android:theme="@style/checkBoxStyle"
+                android:onClick="selectItemBME"
+                android:text="BME 360" />
+
+            <CheckBox
+                android:id="@+id/BME370"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#fff"
+                android:theme="@style/checkBoxStyle"
+                android:onClick="selectItemBME"
+                android:text="BME 370" />
+
+            <CheckBox
+                android:id="@+id/BME490A"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#fff"
+                android:theme="@style/checkBoxStyle"
+                android:onClick="selectItemBME"
+                android:text="BME 490A" />
+
+            <CheckBox
+                android:id="@+id/BME490B"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#fff"
+                android:theme="@style/checkBoxStyle"
+                android:onClick="selectItemBME"
+                android:text="BME 490B" />
+
+            <CheckBox
+                android:id="@+id/RSCH361"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#fff"
+                android:theme="@style/checkBoxStyle"
+                android:onClick="selectItemBME"
+                android:text="RSCH 361" />
+
+            <CheckBox
+                android:id="@+id/bioMajorElective"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#fff"
+                android:theme="@style/checkBoxStyle"
+                android:onClick="selectItemBME"
+                android:text="MAJOR ELECTIVE" />
+
+            <!--<TextView-->
+                <!--android:id="@+id/majorHeading"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:textColor="#fff"-->
+                <!--android:theme="@style/checkBoxStyle"-->
+                <!--android:text="Major Electives:" />-->
+
+            <!--<TextView-->
+                <!--android:id="@+id/majorChoice"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="BME 406, BME 410, BME 420, BME 430, BME 440, BME 445, BME 450" />-->
+
+            <Button
+                android:id="@+id/selectButton"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="16dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/roundedbutton"
+                android:onClick="generateBME"
+                android:text="Generate" />
+        </LinearLayout>
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>

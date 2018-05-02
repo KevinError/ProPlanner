@@ -1,0 +1,427 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#303030"
+    tools:context=".MechActivity">
+
+
+    <ScrollView
+        android:id="@+id/scroll"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Please check all the courses that you have taken"
+                android:textColor="#fff"/>
+
+            <TextView
+                android:id="@+id/mech"
+                android:layout_width="348dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="7dp"
+                android:text="Mechanical Engineering Courses:"
+                android:fontFamily="@font/billabong"
+                android:textSize="25sp"
+                android:textColor="#FFDF00"
+                android:textAppearance="@android:style/TextAppearance.Medium" />
+
+            <CheckBox
+                android:id="@+id/MCHEM111A"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="selectItemMECH"
+                android:textColor="#fff"
+                android:theme="@style/checkBoxStyle"
+                android:text="Chem111A" />
+
+
+            <CheckBox
+                android:id="@+id/MCE205"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="selectItemMECH"
+                android:textColor="#fff"
+                android:theme="@style/checkBoxStyle"
+                android:text="CE 205" />
+
+
+            <CheckBox
+                android:id="@+id/MMATH122"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="selectItemMECH"
+                android:textColor="#fff"
+                android:theme="@style/checkBoxStyle"
+                android:text="MATH 122"
+                />
+
+            <CheckBox
+                android:id="@+id/MMATH123"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="selectItemMECH"
+                android:textColor="#fff"
+                android:theme="@style/checkBoxStyle"
+                android:text="MATH 123"
+                />
+
+            <CheckBox
+                android:id="@+id/MMATH224"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="selectItemMECH"
+                android:textColor="#fff"
+                android:theme="@style/checkBoxStyle"
+                android:text="MATH 224"
+                />
+
+            <CheckBox
+                android:id="@+id/MENGR101"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="selectItemMECH"
+                android:textColor="#fff"
+                android:theme="@style/checkBoxStyle"
+                android:text="ENGR 101"
+                />
+
+            <CheckBox
+                android:id="@+id/MENGR102"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="selectItemMECH"
+                android:textColor="#fff"
+                android:theme="@style/checkBoxStyle"
+                android:text="ENGR 102"
+                />
+
+            <CheckBox
+                android:id="@+id/MMAE101B"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="selectItemMECH"
+                android:textColor="#fff"
+                android:theme="@style/checkBoxStyle"
+                android:text="MAE 101B"
+                />
+
+            <CheckBox
+                android:id="@+id/MMAE172"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="selectItemMECH"
+                android:textColor="#fff"
+                android:theme="@style/checkBoxStyle"
+                android:text="MAE 172"
+                />
+
+            <CheckBox
+                android:id="@+id/MMAE205"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="selectItemMECH"
+                android:textColor="#fff"
+                android:theme="@style/checkBoxStyle"
+                android:text="MAE 205"
+                />
+
+            <CheckBox
+                android:id="@+id/MMAE272"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="selectItemMECH"
+                android:textColor="#fff"
+                android:theme="@style/checkBoxStyle"
+                android:text="MAE 272"
+                />
+
+            <CheckBox
+                android:id="@+id/MPHYS151"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="selectItemMECH"
+                android:textColor="#fff"
+                android:theme="@style/checkBoxStyle"
+                android:text="PHYS 151"
+                />
+
+            <CheckBox
+                android:id="@+id/MPHYS152"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="selectItemMECH"
+                android:textColor="#fff"
+                android:theme="@style/checkBoxStyle"
+                android:text="PHYS 152"
+                />
+
+
+            <CheckBox
+                android:id="@+id/MCE335"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="selectItemMECH"
+                android:textColor="#fff"
+                android:theme="@style/checkBoxStyle"
+                android:text="CE 335"
+                />
+
+            <CheckBox
+                android:id="@+id/MCE336"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="selectItemMECH"
+                android:textColor="#fff"
+                android:theme="@style/checkBoxStyle"
+                android:text="CE 336"
+                />
+
+            <CheckBox
+                android:id="@+id/MCE406"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="selectItemMECH"
+                android:textColor="#fff"
+                android:theme="@style/checkBoxStyle"
+                android:text="CE406"
+                />
+
+            <CheckBox
+                android:id="@+id/MMATH370A"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="selectItemMECH"
+                android:textColor="#fff"
+                android:theme="@style/checkBoxStyle"
+                android:text="MATH 370A"
+                />
+
+            <CheckBox
+                android:id="@+id/MMAE300"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="selectItemMECH"
+                android:textColor="#fff"
+                android:theme="@style/checkBoxStyle"
+                android:text="MAE 300"
+                />
+
+            <CheckBox
+                android:id="@+id/MMAE305"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="selectItemMECH"
+                android:textColor="#fff"
+                android:theme="@style/checkBoxStyle"
+                android:text="MAE 305"
+                />
+
+            <CheckBox
+                android:id="@+id/MMAE322"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="selectItemMECH"
+                android:textColor="#fff"
+                android:theme="@style/checkBoxStyle"
+                android:text="MAE 322"
+                />
+
+            <CheckBox
+                android:id="@+id/MMAE330"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="selectItemMECH"
+                android:textColor="#fff"
+                android:theme="@style/checkBoxStyle"
+                android:text="MAE 330"
+                />
+
+            <CheckBox
+                android:id="@+id/MMAE336"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="selectItemMECH"
+                android:textColor="#fff"
+                android:theme="@style/checkBoxStyle"
+                android:text="MAE 336"
+                />
+
+            <CheckBox
+                android:id="@+id/MMAE337"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="selectItemMECH"
+                android:textColor="#fff"
+                android:theme="@style/checkBoxStyle"
+                android:text="MAE 337"
+                />
+
+            <CheckBox
+                android:id="@+id/MMAE361"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="selectItemMECH"
+                android:textColor="#fff"
+                android:theme="@style/checkBoxStyle"
+                android:text="MAE 361"
+                />
+
+            <CheckBox
+                android:id="@+id/MMAE371"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="selectItemMECH"
+                android:textColor="#fff"
+                android:theme="@style/checkBoxStyle"
+                android:text="MAE 371"
+                />
+
+            <CheckBox
+                android:id="@+id/MMAE373"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="selectItemMECH"
+                android:textColor="#fff"
+                android:theme="@style/checkBoxStyle"
+                android:text="MAE 373"
+                />
+
+            <CheckBox
+                android:id="@+id/MMAE375"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="selectItemMECH"
+                android:textColor="#fff"
+                android:theme="@style/checkBoxStyle"
+                android:text="MAE 375"
+                />
+
+            <CheckBox
+                android:id="@+id/MMAE376"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="selectItemMECH"
+                android:textColor="#fff"
+                android:theme="@style/checkBoxStyle"
+                android:text="MAE 376"
+                />
+
+            <CheckBox
+                android:id="@+id/MMAE409A"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="selectItemMECH"
+                android:textColor="#fff"
+                android:theme="@style/checkBoxStyle"
+                android:text="MAE 409A"
+                />
+
+            <CheckBox
+                android:id="@+id/MMAE431"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="selectItemMECH"
+                android:textColor="#fff"
+                android:theme="@style/checkBoxStyle"
+                android:text="MAE 431"
+                />
+
+            <CheckBox
+                android:id="@+id/MMAE459"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="selectItemMECH"
+                android:textColor="#fff"
+                android:theme="@style/checkBoxStyle"
+                android:text="MAE 459"
+                />
+
+            <CheckBox
+                android:id="@+id/MMAE471"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="selectItemMECH"
+                android:textColor="#fff"
+                android:theme="@style/checkBoxStyle"
+                android:text="MAE 471"
+                />
+
+            <CheckBox
+                android:id="@+id/MMAE472"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="selectItemMECH"
+                android:textColor="#fff"
+                android:theme="@style/checkBoxStyle"
+                android:text="MAE 472"
+                />
+
+            <CheckBox
+                android:id="@+id/MMAE476"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="selectItemMECH"
+                android:textColor="#fff"
+                android:theme="@style/checkBoxStyle"
+                android:text="MAE 476"
+                />
+
+            <CheckBox
+                android:id="@+id/MMAE490"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="selectItemMECH"
+                android:textColor="#fff"
+                android:theme="@style/checkBoxStyle"
+                android:text="MAE 490"
+                />
+
+
+            <Button
+                android:id="@+id/selectMECHButton"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="16dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/roundedbutton"
+                android:onClick="generateMECH"
+                android:text="Generate" />
+
+
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</RelativeLayout>
